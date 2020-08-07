@@ -2,8 +2,9 @@
   "name": "web-tobi-backend",
   "version": "1.0.0",
   "description": "Backend for website TOBI",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
+    "watch": "node app.js > app.log 2> error.log",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
