@@ -2,7 +2,7 @@ let mongoose = require('mongoose')
 
 let UserSchema = new mongoose.Schema({
   username: String,
-  name: String,
+  fullname: String,
   email: String,
   password: String,
   address: String,
@@ -13,4 +13,4 @@ let UserSchema = new mongoose.Schema({
   school: String,
 })
 
-export default mongoose.model('User', UserSchema)
+module.exports = mongoose.model('User', UserSchema)

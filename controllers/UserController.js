@@ -5,5 +5,16 @@ exports.index = (req, res) => {
 }
 
 exports.store = (req, res) => {
-  res.send('test')
+  User.create(
+    {
+      fullname: req.body.fullname,
+      username: req.body.username,
+      email: req.body.email,
+      password: req.body.password,
+    },
+    (err, obj) => {
+      if (err) return res.status(500).send(err)
+      res.send(obj)
+    }
+  )
 }

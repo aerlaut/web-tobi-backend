@@ -1,0 +1,14 @@
+{
+  "watch": [
+    "./controllers",
+    "./models",
+    "./routes",
+    "./middleware",
+    "./app.js"
+  ],
+  "ext": "js",
+  "delay": "3",
+  "execMap": {
+    "js": "node"
+  }
+}
