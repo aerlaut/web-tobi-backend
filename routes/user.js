@@ -5,9 +5,14 @@ const winston = require('winston')
 
 const { body, validationResult, sanitizeBody } = require('express-validator')
 
-// Requrie controller modules
+// Require controller modules
 const UserController = require('../controllers/UserController')
 const jwtAuth = require('../middleware/auth')
+
+// Get
+router.get('/', (req, res) => {
+  return res.send('reply')
+})
 
 // Create
 router.get('/create', UserController.index)
@@ -16,17 +21,10 @@ router.get('/create', UserController.index)
 router.post(
   '/create',
   [
-    jwtAuth,
-    body('fullname').trim().not().isEmpty(),
-    body('username').trim().not().isEmpty().isLength({ min: 3 }),
-    body('email').trim().isEmail().not().isEmpty(),
-    body('password')
-      .trim()
-      .not()
-      .isEmpty()
-      .trim()
-      .escape()
-      .isLength({ min: 6 }),
+    body('fullname').trim().not().isEmpty().escape(),
+    body('username').trim().not().isEmpty().isLength({ min: 5 }).escape(),
+    body('email').trim().isEmail().not().isEmpty().escape(),
+    body('password').trim().not().isEmpty().isLength({ min: 6 }).escape(),
   ],
   UserController.store
 )

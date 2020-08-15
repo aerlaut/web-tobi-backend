@@ -1,10 +1,22 @@
 let mongoose = require('mongoose')
 
 let UserSchema = new mongoose.Schema({
-  username: String,
+  username: {
+    type: String,
+    index: true,
+    required: true,
+    unique: true,
+  },
   fullname: String,
-  email: String,
-  password: String,
+  email: {
+    type: String,
+    required: true,
+    unique: true,
+  },
+  password: {
+    type: String,
+    required: true,
+  },
   address: String,
   city: String,
   province: String,

@@ -2,14 +2,11 @@ const express = require('express')
 const router = express.Router()
 const createError = require('http-errors')
 const winston = require('winston')
+const jwtAuth = require('../middleware/auth')
+
+const DashboardController = require('../controllers/DashboardController')
 
 // Home page route
-// router.get('/', (req, res) => {
-//   res.send(`
-//     DB_HOST : ${process.env.DB_HOST},
-//     DB_PORT : ${process.env.DB_PORT},
-//     DB_NAME : ${process.env.DB_NAME},
-//   `)
-// })
+router.get('/', jwtAuth, DashboardController.show)
 
 module.exports = router

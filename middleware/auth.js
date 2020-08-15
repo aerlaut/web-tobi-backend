@@ -11,4 +11,6 @@ module.exports = function authenticateToken(req, res, next) {
     req.user = user
     next()
   })
+
+  return
 }
