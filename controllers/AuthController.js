@@ -6,13 +6,11 @@ const { validationResult } = require('express-validator')
 
 // Functions
 function generateAccessToken(username, userId) {
-	const expiresIn = 60 * 60 * 24 * 7 // seconds * minutes * hours * days
-
 	return jwt.sign(
 		{ username: username, _id: userId },
 		process.env.ACCESS_TOKEN_SECRET,
 		{
-			expiresIn: `{expiresIn}s`, // seconds
+			expiresIn: `7d`, // seconds
 		}
 	)
 }

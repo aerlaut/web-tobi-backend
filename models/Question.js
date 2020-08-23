@@ -12,9 +12,16 @@ let QuestionItemSchema = new mongoose.Schema({
 })
 
 let QuestionSchema = new mongoose.Schema({
+	questionId: {
+		type: Number,
+		index: true,
+		required: true,
+		unique: true,
+	},
 	createdBy: {
 		type: mongoose.Schema.Types.ObjectId,
 		required: true,
+		index: true,
 	},
 	author: {
 		type: String,
