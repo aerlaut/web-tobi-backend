@@ -1,0 +1,437 @@
+(node:3410) DeprecationWarning: current Server Discovery and Monitoring engine is deprecated, and will be removed in a future version. To use the new Server Discover and Monitoring engine, pass option { useUnifiedTopology: true } to the MongoClient constructor.
+(node:3410) DeprecationWarning: collection.ensureIndex is deprecated. Use createIndexes instead.
+TypeError: console.err is not a function
+    at jwt.verify (/Users/aerlaut/Documents/Projects/web-tobi-backend/middleware/auth.js:9:13)
+    at /Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/jsonwebtoken/verify.js:152:16
+    at getSecret (/Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/jsonwebtoken/verify.js:90:14)
+    at Object.module.exports [as verify] (/Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/jsonwebtoken/verify.js:94:10)
+    at authenticateToken (/Users/aerlaut/Documents/Projects/web-tobi-backend/middleware/auth.js:8:7)
+    at Layer.handle [as handle_request] (/Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/express/lib/router/index.js:275:10)
+    at Function.handle (/Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/express/lib/router/index.js:174:3)
+    at router (/Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/express/lib/router/index.js:317:13)
+(node:3433) DeprecationWarning: current Server Discovery and Monitoring engine is deprecated, and will be removed in a future version. To use the new Server Discover and Monitoring engine, pass option { useUnifiedTopology: true } to the MongoClient constructor.
+(node:3433) DeprecationWarning: collection.ensureIndex is deprecated. Use createIndexes instead.
+(node:3465) DeprecationWarning: current Server Discovery and Monitoring engine is deprecated, and will be removed in a future version. To use the new Server Discover and Monitoring engine, pass option { useUnifiedTopology: true } to the MongoClient constructor.
+(node:3465) DeprecationWarning: collection.ensureIndex is deprecated. Use createIndexes instead.
+{ TokenExpiredError: jwt expired
+    at /Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/jsonwebtoken/verify.js:152:21
+    at getSecret (/Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/jsonwebtoken/verify.js:90:14)
+    at Object.module.exports [as verify] (/Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/jsonwebtoken/verify.js:94:10)
+    at authenticateToken (/Users/aerlaut/Documents/Projects/web-tobi-backend/middleware/auth.js:8:6)
+    at Layer.handle [as handle_request] (/Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/express/lib/router/index.js:275:10)
+    at Function.handle (/Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/express/lib/router/index.js:174:3)
+    at router (/Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/express/lib/router/index.js:317:13)
+    at /Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/express/lib/router/index.js:284:7
+  name: 'TokenExpiredError',
+  message: 'jwt expired',
+  expiredAt: 2020-08-23T02:35:26.000Z }
+null
+(node:3570) DeprecationWarning: current Server Discovery and Monitoring engine is deprecated, and will be removed in a future version. To use the new Server Discover and Monitoring engine, pass option { useUnifiedTopology: true } to the MongoClient constructor.
+(node:3570) DeprecationWarning: collection.ensureIndex is deprecated. Use createIndexes instead.
+(node:3583) DeprecationWarning: current Server Discovery and Monitoring engine is deprecated, and will be removed in a future version. To use the new Server Discover and Monitoring engine, pass option { useUnifiedTopology: true } to the MongoClient constructor.
+(node:3583) DeprecationWarning: collection.ensureIndex is deprecated. Use createIndexes instead.
+/Users/aerlaut/Documents/Projects/web-tobi-backend/controllers/QuestionController.js:13
+			author: req.body.author,
+			^^^^^^
+
+SyntaxError: Unexpected identifier
+    at Module._compile (internal/modules/cjs/loader.js:723:23)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/Users/aerlaut/Documents/Projects/web-tobi-backend/routes/question.js:7:28)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/Users/aerlaut/Documents/Projects/web-tobi-backend/app.js:14:24)
+/Users/aerlaut/Documents/Projects/web-tobi-backend/controllers/QuestionController.js:13
+			author: req.body.author,
+			^^^^^^
+
+SyntaxError: Unexpected identifier
+    at Module._compile (internal/modules/cjs/loader.js:723:23)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/Users/aerlaut/Documents/Projects/web-tobi-backend/routes/question.js:7:28)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/Users/aerlaut/Documents/Projects/web-tobi-backend/app.js:14:24)
+/Users/aerlaut/Documents/Projects/web-tobi-backend/controllers/QuestionController.js:14
+			author: req.body.author,
+			^^^^^^
+
+SyntaxError: Unexpected identifier
+    at Module._compile (internal/modules/cjs/loader.js:723:23)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/Users/aerlaut/Documents/Projects/web-tobi-backend/routes/question.js:7:28)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/Users/aerlaut/Documents/Projects/web-tobi-backend/app.js:14:24)
+/Users/aerlaut/Documents/Projects/web-tobi-backend/controllers/QuestionController.js:14
+			author: req.body.author,
+			^^^^^^
+
+SyntaxError: Unexpected identifier
+    at Module._compile (internal/modules/cjs/loader.js:723:23)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/Users/aerlaut/Documents/Projects/web-tobi-backend/routes/question.js:7:28)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/Users/aerlaut/Documents/Projects/web-tobi-backend/app.js:14:24)
+/Users/aerlaut/Documents/Projects/web-tobi-backend/controllers/QuestionController.js:14
+			author: req.body.author,
+			^^^^^^
+
+SyntaxError: Unexpected identifier
+    at Module._compile (internal/modules/cjs/loader.js:723:23)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/Users/aerlaut/Documents/Projects/web-tobi-backend/routes/question.js:7:28)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/Users/aerlaut/Documents/Projects/web-tobi-backend/app.js:14:24)
+/Users/aerlaut/Documents/Projects/web-tobi-backend/controllers/QuestionController.js:14
+			author: req.body.author,
+			^^^^^^
+
+SyntaxError: Unexpected identifier
+    at Module._compile (internal/modules/cjs/loader.js:723:23)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/Users/aerlaut/Documents/Projects/web-tobi-backend/routes/question.js:7:28)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/Users/aerlaut/Documents/Projects/web-tobi-backend/app.js:14:24)
+/Users/aerlaut/Documents/Projects/web-tobi-backend/controllers/QuestionController.js:14
+			author: req.body.author,
+			^^^^^^
+
+SyntaxError: Unexpected identifier
+    at Module._compile (internal/modules/cjs/loader.js:723:23)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/Users/aerlaut/Documents/Projects/web-tobi-backend/routes/question.js:7:28)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/Users/aerlaut/Documents/Projects/web-tobi-backend/app.js:14:24)
+/Users/aerlaut/Documents/Projects/web-tobi-backend/controllers/QuestionController.js:14
+			author: req.body.author,
+			^^^^^^
+
+SyntaxError: Unexpected identifier
+    at Module._compile (internal/modules/cjs/loader.js:723:23)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/Users/aerlaut/Documents/Projects/web-tobi-backend/routes/question.js:7:28)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/Users/aerlaut/Documents/Projects/web-tobi-backend/app.js:14:24)
+/Users/aerlaut/Documents/Projects/web-tobi-backend/controllers/QuestionController.js:14
+			author: req.body.author,
+			^^^^^^
+
+SyntaxError: Unexpected identifier
+    at Module._compile (internal/modules/cjs/loader.js:723:23)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/Users/aerlaut/Documents/Projects/web-tobi-backend/routes/question.js:7:28)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/Users/aerlaut/Documents/Projects/web-tobi-backend/app.js:14:24)
+(node:3408) MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 exit listeners added. Use emitter.setMaxListeners() to increase limit
+(node:3891) DeprecationWarning: current Server Discovery and Monitoring engine is deprecated, and will be removed in a future version. To use the new Server Discover and Monitoring engine, pass option { useUnifiedTopology: true } to the MongoClient constructor.
+(node:3891) DeprecationWarning: collection.ensureIndex is deprecated. Use createIndexes instead.
+null
+(node:5788) DeprecationWarning: current Server Discovery and Monitoring engine is deprecated, and will be removed in a future version. To use the new Server Discover and Monitoring engine, pass option { useUnifiedTopology: true } to the MongoClient constructor.
+(node:5788) DeprecationWarning: collection.ensureIndex is deprecated. Use createIndexes instead.
+(node:5829) DeprecationWarning: current Server Discovery and Monitoring engine is deprecated, and will be removed in a future version. To use the new Server Discover and Monitoring engine, pass option { useUnifiedTopology: true } to the MongoClient constructor.
+(node:5829) DeprecationWarning: collection.ensureIndex is deprecated. Use createIndexes instead.
+(node:5841) DeprecationWarning: current Server Discovery and Monitoring engine is deprecated, and will be removed in a future version. To use the new Server Discover and Monitoring engine, pass option { useUnifiedTopology: true } to the MongoClient constructor.
+(node:5841) DeprecationWarning: collection.ensureIndex is deprecated. Use createIndexes instead.
+null
+(node:6400) DeprecationWarning: current Server Discovery and Monitoring engine is deprecated, and will be removed in a future version. To use the new Server Discover and Monitoring engine, pass option { useUnifiedTopology: true } to the MongoClient constructor.
+(node:6400) DeprecationWarning: collection.ensureIndex is deprecated. Use createIndexes instead.
+{ TokenExpiredError: jwt expired
+    at /Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/jsonwebtoken/verify.js:152:21
+    at getSecret (/Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/jsonwebtoken/verify.js:90:14)
+    at Object.module.exports [as verify] (/Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/jsonwebtoken/verify.js:94:10)
+    at authenticateToken (/Users/aerlaut/Documents/Projects/web-tobi-backend/middleware/auth.js:8:6)
+    at Layer.handle [as handle_request] (/Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/express/lib/router/index.js:275:10)
+    at Function.handle (/Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/express/lib/router/index.js:174:3)
+    at router (/Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/express/lib/router/index.js:317:13)
+    at /Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/express/lib/router/index.js:284:7
+  name: 'TokenExpiredError',
+  message: 'jwt expired',
+  expiredAt: 2020-08-23T05:01:35.000Z }
+null
+(node:6424) DeprecationWarning: current Server Discovery and Monitoring engine is deprecated, and will be removed in a future version. To use the new Server Discover and Monitoring engine, pass option { useUnifiedTopology: true } to the MongoClient constructor.
+(node:6424) DeprecationWarning: collection.ensureIndex is deprecated. Use createIndexes instead.
+(node:6443) DeprecationWarning: current Server Discovery and Monitoring engine is deprecated, and will be removed in a future version. To use the new Server Discover and Monitoring engine, pass option { useUnifiedTopology: true } to the MongoClient constructor.
+(node:6443) DeprecationWarning: collection.ensureIndex is deprecated. Use createIndexes instead.
+(node:6495) DeprecationWarning: current Server Discovery and Monitoring engine is deprecated, and will be removed in a future version. To use the new Server Discover and Monitoring engine, pass option { useUnifiedTopology: true } to the MongoClient constructor.
+(node:6495) DeprecationWarning: collection.ensureIndex is deprecated. Use createIndexes instead.
+null
+(node:6509) DeprecationWarning: current Server Discovery and Monitoring engine is deprecated, and will be removed in a future version. To use the new Server Discover and Monitoring engine, pass option { useUnifiedTopology: true } to the MongoClient constructor.
+(node:6509) DeprecationWarning: collection.ensureIndex is deprecated. Use createIndexes instead.
+null
+(node:6521) DeprecationWarning: current Server Discovery and Monitoring engine is deprecated, and will be removed in a future version. To use the new Server Discover and Monitoring engine, pass option { useUnifiedTopology: true } to the MongoClient constructor.
+(node:6521) DeprecationWarning: collection.ensureIndex is deprecated. Use createIndexes instead.
+(node:6534) DeprecationWarning: current Server Discovery and Monitoring engine is deprecated, and will be removed in a future version. To use the new Server Discover and Monitoring engine, pass option { useUnifiedTopology: true } to the MongoClient constructor.
+(node:6534) DeprecationWarning: collection.ensureIndex is deprecated. Use createIndexes instead.
+null
+(node:6546) DeprecationWarning: current Server Discovery and Monitoring engine is deprecated, and will be removed in a future version. To use the new Server Discover and Monitoring engine, pass option { useUnifiedTopology: true } to the MongoClient constructor.
+(node:6546) DeprecationWarning: collection.ensureIndex is deprecated. Use createIndexes instead.
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+{ TokenExpiredError: jwt expired
+    at /Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/jsonwebtoken/verify.js:152:21
+    at getSecret (/Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/jsonwebtoken/verify.js:90:14)
+    at Object.module.exports [as verify] (/Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/jsonwebtoken/verify.js:94:10)
+    at authenticateToken (/Users/aerlaut/Documents/Projects/web-tobi-backend/middleware/auth.js:8:6)
+    at Layer.handle [as handle_request] (/Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/express/lib/router/index.js:275:10)
+    at Function.handle (/Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/express/lib/router/index.js:174:3)
+    at router (/Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/express/lib/router/index.js:317:13)
+    at /Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/express/lib/router/index.js:284:7
+  name: 'TokenExpiredError',
+  message: 'jwt expired',
+  expiredAt: 2020-08-23T06:31:29.000Z }
+{ TokenExpiredError: jwt expired
+    at /Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/jsonwebtoken/verify.js:152:21
+    at getSecret (/Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/jsonwebtoken/verify.js:90:14)
+    at Object.module.exports [as verify] (/Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/jsonwebtoken/verify.js:94:10)
+    at authenticateToken (/Users/aerlaut/Documents/Projects/web-tobi-backend/middleware/auth.js:8:6)
+    at Layer.handle [as handle_request] (/Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/express/lib/router/index.js:275:10)
+    at Function.handle (/Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/express/lib/router/index.js:174:3)
+    at router (/Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/express/lib/router/index.js:317:13)
+    at /Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/express/lib/router/index.js:284:7
+  name: 'TokenExpiredError',
+  message: 'jwt expired',
+  expiredAt: 2020-08-23T06:31:29.000Z }
+/Users/aerlaut/Documents/Projects/web-tobi-backend/controllers/AuthController.js:14
+      const time = 60 * 60 * 24 * 7
+            ^^^^
+
+SyntaxError: Unexpected identifier
+    at Module._compile (internal/modules/cjs/loader.js:723:23)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/Users/aerlaut/Documents/Projects/web-tobi-backend/routes/auth.js:9:24)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/Users/aerlaut/Documents/Projects/web-tobi-backend/app.js:12:20)
+(node:6840) DeprecationWarning: current Server Discovery and Monitoring engine is deprecated, and will be removed in a future version. To use the new Server Discover and Monitoring engine, pass option { useUnifiedTopology: true } to the MongoClient constructor.
+(node:6840) DeprecationWarning: collection.ensureIndex is deprecated. Use createIndexes instead.
+(node:6855) DeprecationWarning: current Server Discovery and Monitoring engine is deprecated, and will be removed in a future version. To use the new Server Discover and Monitoring engine, pass option { useUnifiedTopology: true } to the MongoClient constructor.
+(node:6855) DeprecationWarning: collection.ensureIndex is deprecated. Use createIndexes instead.
+(node:6867) DeprecationWarning: current Server Discovery and Monitoring engine is deprecated, and will be removed in a future version. To use the new Server Discover and Monitoring engine, pass option { useUnifiedTopology: true } to the MongoClient constructor.
+(node:6867) DeprecationWarning: collection.ensureIndex is deprecated. Use createIndexes instead.
+events.js:174
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: "expiresIn" should be a number of seconds or string representing a timespan eg: "1d", "20h", 60
+    at Object.module.exports [as sign] (/Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/jsonwebtoken/sign.js:175:22)
+    at generateAccessToken (/Users/aerlaut/Documents/Projects/web-tobi-backend/controllers/AuthController.js:11:13)
+    at User.findOne (/Users/aerlaut/Documents/Projects/web-tobi-backend/controllers/AuthController.js:51:15)
+    at /Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/mongoose/lib/model.js:4834:16
+    at /Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/mongoose/lib/model.js:4834:16
+    at /Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/mongoose/lib/helpers/promiseOrCallback.js:24:16
+    at /Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/mongoose/lib/model.js:4857:21
+    at _hooks.execPost (/Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/mongoose/lib/query.js:4390:11)
+    at /Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/kareem/index.js:135:16
+    at process._tickCallback (internal/process/next_tick.js:61:11)
+Emitted 'error' event at:
+    at /Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/mongoose/lib/model.js:4836:13
+    at /Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/mongoose/lib/helpers/promiseOrCallback.js:24:16
+    [... lines matching original stack trace ...]
+    at process._tickCallback (internal/process/next_tick.js:61:11)
