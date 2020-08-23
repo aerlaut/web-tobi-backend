@@ -1,6 +1,7 @@
 const Question = require('../models/Question')
 const Counter = require('../models/Counter')
 
+// Get list of all questions
 exports.index = (req, res) => {
 	Question.find({}, function (err, docs) {
 		if (err) {
@@ -9,40 +10,47 @@ exports.index = (req, res) => {
 
 		return res.json({
 			status: 'ok',
-			message: 'Question sent',
+			message: 'Question fetched',
 			data: docs,
 		})
 	})
 }
 
+// Store new question
 exports.store = (req, res) => {
 	// Get current userId from token
 	const { _id } = req.user
 
-	async function createUser() {
-		// Get new question id
+	async function createQuestion() {
+		// Create question
+		try {
+			let doc = await Question.create({
+				questionId: 0,
+				createdBy: _id,
+				author: req.body.author,
+				description: req.body.description,
+				createdAt: req.body.createdAt,
+				difficulty: req.body.difficulty,
+				tier: req.body.tier,
+				isOfficial: req.body.isOfficial,
+				maxScore: req.body.maxScore,
+				isPublished: req.body.isPublished,
+				contents: req.body.contents,
+			})
+		} catch (err) {
+			return res.status(500).json(err)
+		}
+
+		// Update question id
 		let counter = new Counter()
 		let questionId = await counter.getNewId('Question')
 
-		console.log(`questionId is ${questionId}`)
-
-		// Create question
-		return Question.create({
-			questionId: questionId,
-			createdBy: _id,
-			author: req.body.author,
-			createdAt: req.body.createdAt,
-			difficulty: req.body.difficulty,
-			tier: req.body.tier,
-			isOfficial: req.body.isOfficial,
-			maxScore: req.body.maxScore,
-			isPublished: req.body.isPublished,
-			body: req.body.body,
-		})
+		doc.questionId = questionId
+		return doc.save()
 	}
 
-	// Create user
-	createUser()
+	// Create question
+	createQuestion()
 		.then((doc) => {
 			return res.json({
 				status: 'ok',
@@ -52,11 +60,10 @@ exports.store = (req, res) => {
 		})
 		.catch((err) => {
 			if (err.code == 11000 && err.keyPattern.questionId) {
-				let returnErr = Object.keys(err.keyPattern)[0]
+				let field = Object.keys(err.keyPattern)[0]
 
 				return res.status(202).json({
 					status: 'not_unique',
-					field: field,
 					message: `${field} is already used`,
 				})
 			}
@@ -65,6 +72,32 @@ exports.store = (req, res) => {
 		})
 }
 
+// Get data for one question
 exports.show = (req, res) => {
 	const { id } = req.params
+
+	Question.findOne({ questionId: id }, (err, doc) => {
+		if (err) return res.status(500).json(err)
+
+		return res.json({
+			status: 'ok',
+			message: 'Question fetched',
+			data: doc,
+		})
+	})
+}
+
+// Update question
+exports.update = (req, res) => {
+	const { id } = req.params
+
+	Question.findByIdAndUpdate(req.body._id, req.body, (err, doc) => {
+		if (err) return res.status(500).json(err)
+
+		return res.json({
+			status: 'ok',
+			message: `Question ${id} updated`,
+			data: doc,
+		})
+	})
 }

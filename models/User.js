@@ -7,6 +7,11 @@ let UserSchema = new mongoose.Schema({
 		required: true,
 		unique: true,
 	},
+	role: {
+		type: String,
+		default: 'user',
+		enum: ['superadmin', 'admin', 'user'],
+	},
 	fullname: String,
 	email: {
 		type: String,

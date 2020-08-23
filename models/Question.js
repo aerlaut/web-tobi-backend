@@ -27,6 +27,10 @@ let QuestionSchema = new mongoose.Schema({
 		type: String,
 		required: true,
 	},
+	description: {
+		type: String,
+		required: true,
+	},
 	createdAt: {
 		type: Date,
 	},
@@ -64,11 +68,10 @@ let QuestionSchema = new mongoose.Schema({
 		type: Boolean,
 		default: false,
 	},
-	publishedDate: {
-		type: Boolean,
-		default: false,
+	publishedAt: {
+		type: Date,
 	},
-	body: {
+	contents: {
 		type: [QuestionItemSchema],
 	},
 })
