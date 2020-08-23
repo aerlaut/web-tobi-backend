@@ -1,6 +1,7 @@
 const User = require('../models/User')
 const bcrypt = require('bcryptjs')
 const jwt = require('jsonwebtoken')
+const Counter = require('../models/Counter')
 
 const { validationResult } = require('express-validator')
 
