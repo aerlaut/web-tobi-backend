@@ -18,7 +18,11 @@ const app = express()
 const DBURI = `mongodb://${process.env.DB_HOST}:${process.env.DB_PORT}/${process.env.DB_NAME}`
 
 mongoose
-	.connect(DBURI, { useNewUrlParser: true, useFindAndModify: false })
+	.connect(DBURI, {
+		useNewUrlParser: true,
+		useFindAndModify: false,
+		useCreateIndex: true,
+	})
 	.catch((err) => console.error(err))
 
 app.use(cors())

@@ -50,6 +50,7 @@ exports.login = (req, res) => {
 							token: generateAccessToken(user.username, user._id),
 							username: user.username,
 							role: user.role,
+							id: user.id,
 						},
 					})
 				} else {

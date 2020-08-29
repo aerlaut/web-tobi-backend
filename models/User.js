@@ -1,6 +1,14 @@
 let mongoose = require('mongoose')
 
 let UserSchema = new mongoose.Schema({
+	id: {
+		type: Number,
+		required: true,
+		unique: true,
+		index: true,
+	},
+	createdAt: Date,
+	updatedAt: Date,
 	username: {
 		type: String,
 		index: true,
@@ -27,7 +35,17 @@ let UserSchema = new mongoose.Schema({
 	province: String,
 	country: String,
 	mobileNo: String,
+	grade: String,
 	school: String,
+	isVerified: {
+		type: Boolean,
+		default: false,
+	},
+	emailVerified: {
+		type: Boolean,
+		default: false,
+	},
+	lastLogin: Date,
 })
 
 module.exports = mongoose.model('User', UserSchema)

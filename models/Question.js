@@ -9,10 +9,13 @@ let QuestionItemSchema = new mongoose.Schema({
 		type: mongoose.Schema.Types.Mixed,
 		required: true,
 	},
+	score: {
+		type: Number,
+	},
 })
 
 let QuestionSchema = new mongoose.Schema({
-	questionId: {
+	id: {
 		type: Number,
 		index: true,
 		required: true,

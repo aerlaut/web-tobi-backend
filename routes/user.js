@@ -10,32 +10,38 @@ const UserController = require('../controllers/UserController')
 const jwtAuth = require('../middleware/auth')
 
 // Get
-router.get('/', (req, res) => {
-  return res.send('reply')
-})
-
-// Create
-router.get('/create', UserController.index)
+router.get('/', jwtAuth, UserController.index)
 
 // Store
 router.post(
-  '/create',
-  [
-    body('fullname').trim().not().isEmpty().escape(),
-    body('username').trim().not().isEmpty().isLength({ min: 5 }).escape(),
-    body('email').trim().isEmail().not().isEmpty().escape(),
-    body('password').trim().not().isEmpty().isLength({ min: 6 }).escape(),
-  ],
-  UserController.store
+	'/create',
+	[
+		body('username').trim().not().isEmpty().isLength({ min: 5 }).escape(),
+		body('fullname').trim().not().isEmpty().escape(),
+		body('email').trim().isEmail().not().isEmpty().escape(),
+		body('password').trim().not().isEmpty().isLength({ min: 6 }).escape(),
+	],
+	UserController.store
 )
 
 // Read
-router.get('/:id', (req, res) => {
-  res.send('test')
-})
+router.post('/profile', UserController.show)
+router.get('/:id', UserController.show)
 
 // Update
+router.get('/:id/edit', jwtAuth, UserController.show)
+router.post(
+	'/:id/edit',
+	[
+		body('username').trim().not().isEmpty().isLength({ min: 5 }).escape(),
+		body('fullname').trim().not().isEmpty().escape(),
+		body('email').trim().isEmail().not().isEmpty().escape(),
+		jwtAuth,
+	],
+	UserController.update
+)
 
 // Delete
+// router.post('/:id/delete', jwtAuth, UserController.destroy)
 
 module.exports = router

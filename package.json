@@ -1,28 +1,28 @@
 {
-  "name": "web-tobi-backend",
-  "version": "1.0.0",
-  "description": "Backend for website TOBI",
-  "main": "app.js",
-  "scripts": {
-    "watch": "nodemon 2> error.log",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "github.com/aerlaut/web-tobi-backend"
-  },
-  "author": "Anugerah Erlaut",
-  "license": "ISC",
-  "dependencies": {
-    "bcryptjs": "^2.4.3",
-    "body-parser": "^1.19.0",
-    "cors": "^2.8.5",
-    "dotenv": "^8.2.0",
-    "express": "^4.17.1",
-    "express-validator": "^6.6.1",
-    "http-errors": "^1.8.0",
-    "jsonwebtoken": "^8.5.1",
-    "mongoose": "^5.9.25",
-    "winston": "^3.3.3"
-  }
+	"name": "web-tobi-backend",
+	"version": "1.0.0",
+	"description": "Backend for website TOBI",
+	"main": "app.js",
+	"scripts": {
+		"start": "nodemon 2> error.log",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "github.com/aerlaut/web-tobi-backend"
+	},
+	"author": "Anugerah Erlaut",
+	"license": "ISC",
+	"dependencies": {
+		"bcryptjs": "^2.4.3",
+		"body-parser": "^1.19.0",
+		"cors": "^2.8.5",
+		"dotenv": "^8.2.0",
+		"express": "^4.17.1",
+		"express-validator": "^6.6.1",
+		"http-errors": "^1.8.0",
+		"jsonwebtoken": "^8.5.1",
+		"mongoose": "^5.9.25",
+		"winston": "^3.3.3"
+	}
 }
