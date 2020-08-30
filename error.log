@@ -1,81 +1,20 @@
-(node:2114) DeprecationWarning: current Server Discovery and Monitoring engine is deprecated, and will be removed in a future version. To use the new Server Discover and Monitoring engine, pass option { useUnifiedTopology: true } to the MongoClient constructor.
-(node:2267) DeprecationWarning: current Server Discovery and Monitoring engine is deprecated, and will be removed in a future version. To use the new Server Discover and Monitoring engine, pass option { useUnifiedTopology: true } to the MongoClient constructor.
+(node:5215) DeprecationWarning: current Server Discovery and Monitoring engine is deprecated, and will be removed in a future version. To use the new Server Discover and Monitoring engine, pass option { useUnifiedTopology: true } to the MongoClient constructor.
+(node:5264) DeprecationWarning: current Server Discovery and Monitoring engine is deprecated, and will be removed in a future version. To use the new Server Discover and Monitoring engine, pass option { useUnifiedTopology: true } to the MongoClient constructor.
+(node:5285) DeprecationWarning: current Server Discovery and Monitoring engine is deprecated, and will be removed in a future version. To use the new Server Discover and Monitoring engine, pass option { useUnifiedTopology: true } to the MongoClient constructor.
 null
-null
-null
-null
-null
-null
-(node:2267) UnhandledPromiseRejectionWarning: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
-    at ServerResponse.setHeader (_http_outgoing.js:470:11)
-    at ServerResponse.header (/Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/express/lib/response.js:771:10)
-    at ServerResponse.send (/Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/express/lib/response.js:170:12)
-    at ServerResponse.json (/Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/express/lib/response.js:267:15)
-    at create.then.catch (/Users/aerlaut/Documents/Projects/web-tobi-backend/controllers/QuestionController.js:71:27)
-    at process._tickCallback (internal/process/next_tick.js:68:7)
-(node:2267) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 2)
-(node:2267) [DEP0018] DeprecationWarning: Unhandled promise rejections are deprecated. In the future, promise rejections that are not handled will terminate the Node.js process with a non-zero exit code.
-null
-(node:2267) UnhandledPromiseRejectionWarning: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
-    at ServerResponse.setHeader (_http_outgoing.js:470:11)
-    at ServerResponse.header (/Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/express/lib/response.js:771:10)
-    at ServerResponse.send (/Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/express/lib/response.js:170:12)
-    at ServerResponse.json (/Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/express/lib/response.js:267:15)
-    at create.then.catch (/Users/aerlaut/Documents/Projects/web-tobi-backend/controllers/QuestionController.js:71:27)
-    at process._tickCallback (internal/process/next_tick.js:68:7)
-(node:2267) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 4)
-null
-(node:2267) UnhandledPromiseRejectionWarning: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
-    at ServerResponse.setHeader (_http_outgoing.js:470:11)
-    at ServerResponse.header (/Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/express/lib/response.js:771:10)
-    at ServerResponse.send (/Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/express/lib/response.js:170:12)
-    at ServerResponse.json (/Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/express/lib/response.js:267:15)
-    at create.then.catch (/Users/aerlaut/Documents/Projects/web-tobi-backend/controllers/QuestionController.js:71:27)
-    at process._tickCallback (internal/process/next_tick.js:68:7)
-(node:2267) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 6)
-null
-null
-(node:2267) UnhandledPromiseRejectionWarning: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
-    at ServerResponse.setHeader (_http_outgoing.js:470:11)
-    at ServerResponse.header (/Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/express/lib/response.js:771:10)
-    at ServerResponse.send (/Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/express/lib/response.js:170:12)
-    at ServerResponse.json (/Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/express/lib/response.js:267:15)
-    at create.then.catch (/Users/aerlaut/Documents/Projects/web-tobi-backend/controllers/QuestionController.js:71:27)
-    at process._tickCallback (internal/process/next_tick.js:68:7)
-(node:2267) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 8)
-null
-(node:2267) UnhandledPromiseRejectionWarning: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
-    at ServerResponse.setHeader (_http_outgoing.js:470:11)
-    at ServerResponse.header (/Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/express/lib/response.js:771:10)
-    at ServerResponse.send (/Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/express/lib/response.js:170:12)
-    at ServerResponse.json (/Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/express/lib/response.js:267:15)
-    at create.then.catch (/Users/aerlaut/Documents/Projects/web-tobi-backend/controllers/QuestionController.js:71:27)
-    at process._tickCallback (internal/process/next_tick.js:68:7)
-(node:2267) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 9)
-null
-(node:2267) UnhandledPromiseRejectionWarning: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
-    at ServerResponse.setHeader (_http_outgoing.js:470:11)
-    at ServerResponse.header (/Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/express/lib/response.js:771:10)
-    at ServerResponse.send (/Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/express/lib/response.js:170:12)
-    at ServerResponse.json (/Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/express/lib/response.js:267:15)
-    at create.then.catch (/Users/aerlaut/Documents/Projects/web-tobi-backend/controllers/QuestionController.js:71:27)
-    at process._tickCallback (internal/process/next_tick.js:68:7)
-(node:2267) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 10)
-(node:2891) DeprecationWarning: current Server Discovery and Monitoring engine is deprecated, and will be removed in a future version. To use the new Server Discover and Monitoring engine, pass option { useUnifiedTopology: true } to the MongoClient constructor.
-(node:2891) UnhandledPromiseRejectionWarning: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
-    at ServerResponse.setHeader (_http_outgoing.js:470:11)
-    at ServerResponse.header (/Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/express/lib/response.js:771:10)
-    at ServerResponse.send (/Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/express/lib/response.js:170:12)
-    at ServerResponse.json (/Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/express/lib/response.js:267:15)
-    at create.then.catch (/Users/aerlaut/Documents/Projects/web-tobi-backend/controllers/UserController.js:104:27)
-    at process._tickCallback (internal/process/next_tick.js:68:7)
-(node:2891) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 1)
-(node:2891) [DEP0018] DeprecationWarning: Unhandled promise rejections are deprecated. In the future, promise rejections that are not handled will terminate the Node.js process with a non-zero exit code.
-/Users/aerlaut/Documents/Projects/web-tobi-backend/controllers/UserController.js:67
-	payload.id = await counter.getNewId('User')
-	             ^^^^^
+(node:5622) DeprecationWarning: current Server Discovery and Monitoring engine is deprecated, and will be removed in a future version. To use the new Server Discover and Monitoring engine, pass option { useUnifiedTopology: true } to the MongoClient constructor.
+(node:5657) DeprecationWarning: current Server Discovery and Monitoring engine is deprecated, and will be removed in a future version. To use the new Server Discover and Monitoring engine, pass option { useUnifiedTopology: true } to the MongoClient constructor.
+(node:5722) DeprecationWarning: current Server Discovery and Monitoring engine is deprecated, and will be removed in a future version. To use the new Server Discover and Monitoring engine, pass option { useUnifiedTopology: true } to the MongoClient constructor.
+(node:5739) DeprecationWarning: current Server Discovery and Monitoring engine is deprecated, and will be removed in a future version. To use the new Server Discover and Monitoring engine, pass option { useUnifiedTopology: true } to the MongoClient constructor.
+(node:5751) DeprecationWarning: current Server Discovery and Monitoring engine is deprecated, and will be removed in a future version. To use the new Server Discover and Monitoring engine, pass option { useUnifiedTopology: true } to the MongoClient constructor.
+(node:5787) DeprecationWarning: current Server Discovery and Monitoring engine is deprecated, and will be removed in a future version. To use the new Server Discover and Monitoring engine, pass option { useUnifiedTopology: true } to the MongoClient constructor.
+(node:5803) DeprecationWarning: current Server Discovery and Monitoring engine is deprecated, and will be removed in a future version. To use the new Server Discover and Monitoring engine, pass option { useUnifiedTopology: true } to the MongoClient constructor.
+(node:5844) DeprecationWarning: current Server Discovery and Monitoring engine is deprecated, and will be removed in a future version. To use the new Server Discover and Monitoring engine, pass option { useUnifiedTopology: true } to the MongoClient constructor.
+/Users/aerlaut/Documents/Projects/web-tobi-backend/controllers/FileController.js:37
+			return res.json({
+			^^^^^^
 
-SyntaxError: await is only valid in async function
+SyntaxError: Unexpected token return
     at Module._compile (internal/modules/cjs/loader.js:723:23)
     at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
     at Module.load (internal/modules/cjs/loader.js:653:32)
@@ -83,7 +22,7 @@ SyntaxError: await is only valid in async function
     at Function.Module._load (internal/modules/cjs/loader.js:585:3)
     at Module.require (internal/modules/cjs/loader.js:692:17)
     at require (internal/modules/cjs/helpers.js:25:18)
-    at Object.<anonymous> (/Users/aerlaut/Documents/Projects/web-tobi-backend/routes/user.js:9:24)
+    at Object.<anonymous> (/Users/aerlaut/Documents/Projects/web-tobi-backend/routes/file.js:7:24)
     at Module._compile (internal/modules/cjs/loader.js:778:30)
     at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
     at Module.load (internal/modules/cjs/loader.js:653:32)
@@ -91,12 +30,12 @@ SyntaxError: await is only valid in async function
     at Function.Module._load (internal/modules/cjs/loader.js:585:3)
     at Module.require (internal/modules/cjs/loader.js:692:17)
     at require (internal/modules/cjs/helpers.js:25:18)
-    at Object.<anonymous> (/Users/aerlaut/Documents/Projects/web-tobi-backend/app.js:11:20)
-/Users/aerlaut/Documents/Projects/web-tobi-backend/controllers/UserController.js:67
-	payload.id = await counter.getNewId('User')
-	             ^^^^^
+    at Object.<anonymous> (/Users/aerlaut/Documents/Projects/web-tobi-backend/app.js:15:20)
+/Users/aerlaut/Documents/Projects/web-tobi-backend/controllers/FileController.js:37
+			return res.json({
+			^^^^^^
 
-SyntaxError: await is only valid in async function
+SyntaxError: Unexpected token return
     at Module._compile (internal/modules/cjs/loader.js:723:23)
     at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
     at Module.load (internal/modules/cjs/loader.js:653:32)
@@ -104,7 +43,7 @@ SyntaxError: await is only valid in async function
     at Function.Module._load (internal/modules/cjs/loader.js:585:3)
     at Module.require (internal/modules/cjs/loader.js:692:17)
     at require (internal/modules/cjs/helpers.js:25:18)
-    at Object.<anonymous> (/Users/aerlaut/Documents/Projects/web-tobi-backend/routes/user.js:9:24)
+    at Object.<anonymous> (/Users/aerlaut/Documents/Projects/web-tobi-backend/routes/file.js:7:24)
     at Module._compile (internal/modules/cjs/loader.js:778:30)
     at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
     at Module.load (internal/modules/cjs/loader.js:653:32)
@@ -112,12 +51,12 @@ SyntaxError: await is only valid in async function
     at Function.Module._load (internal/modules/cjs/loader.js:585:3)
     at Module.require (internal/modules/cjs/loader.js:692:17)
     at require (internal/modules/cjs/helpers.js:25:18)
-    at Object.<anonymous> (/Users/aerlaut/Documents/Projects/web-tobi-backend/app.js:11:20)
-/Users/aerlaut/Documents/Projects/web-tobi-backend/controllers/UserController.js:67
-	payload.id = await counter.getNewId('User')
-	             ^^^^^
+    at Object.<anonymous> (/Users/aerlaut/Documents/Projects/web-tobi-backend/app.js:15:20)
+/Users/aerlaut/Documents/Projects/web-tobi-backend/controllers/FileController.js:37
+			return res.json({
+			^^^^^^
 
-SyntaxError: await is only valid in async function
+SyntaxError: Unexpected token return
     at Module._compile (internal/modules/cjs/loader.js:723:23)
     at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
     at Module.load (internal/modules/cjs/loader.js:653:32)
@@ -125,7 +64,7 @@ SyntaxError: await is only valid in async function
     at Function.Module._load (internal/modules/cjs/loader.js:585:3)
     at Module.require (internal/modules/cjs/loader.js:692:17)
     at require (internal/modules/cjs/helpers.js:25:18)
-    at Object.<anonymous> (/Users/aerlaut/Documents/Projects/web-tobi-backend/routes/user.js:9:24)
+    at Object.<anonymous> (/Users/aerlaut/Documents/Projects/web-tobi-backend/routes/file.js:7:24)
     at Module._compile (internal/modules/cjs/loader.js:778:30)
     at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
     at Module.load (internal/modules/cjs/loader.js:653:32)
@@ -133,12 +72,12 @@ SyntaxError: await is only valid in async function
     at Function.Module._load (internal/modules/cjs/loader.js:585:3)
     at Module.require (internal/modules/cjs/loader.js:692:17)
     at require (internal/modules/cjs/helpers.js:25:18)
-    at Object.<anonymous> (/Users/aerlaut/Documents/Projects/web-tobi-backend/app.js:11:20)
-/Users/aerlaut/Documents/Projects/web-tobi-backend/controllers/UserController.js:67
-	payload.id = await counter.getNewId('User')
-	             ^^^^^
+    at Object.<anonymous> (/Users/aerlaut/Documents/Projects/web-tobi-backend/app.js:15:20)
+/Users/aerlaut/Documents/Projects/web-tobi-backend/controllers/FileController.js:35
+			return res.json({
+			^^^^^^
 
-SyntaxError: await is only valid in async function
+SyntaxError: Unexpected token return
     at Module._compile (internal/modules/cjs/loader.js:723:23)
     at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
     at Module.load (internal/modules/cjs/loader.js:653:32)
@@ -146,7 +85,7 @@ SyntaxError: await is only valid in async function
     at Function.Module._load (internal/modules/cjs/loader.js:585:3)
     at Module.require (internal/modules/cjs/loader.js:692:17)
     at require (internal/modules/cjs/helpers.js:25:18)
-    at Object.<anonymous> (/Users/aerlaut/Documents/Projects/web-tobi-backend/routes/user.js:9:24)
+    at Object.<anonymous> (/Users/aerlaut/Documents/Projects/web-tobi-backend/routes/file.js:7:24)
     at Module._compile (internal/modules/cjs/loader.js:778:30)
     at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
     at Module.load (internal/modules/cjs/loader.js:653:32)
@@ -154,20 +93,29 @@ SyntaxError: await is only valid in async function
     at Function.Module._load (internal/modules/cjs/loader.js:585:3)
     at Module.require (internal/modules/cjs/loader.js:692:17)
     at require (internal/modules/cjs/helpers.js:25:18)
-    at Object.<anonymous> (/Users/aerlaut/Documents/Projects/web-tobi-backend/app.js:11:20)
-/Users/aerlaut/Documents/Projects/web-tobi-backend/controllers/UserController.js:67
-	payload.id = await counter.getNewId('User')
-	             ^^^^^
+    at Object.<anonymous> (/Users/aerlaut/Documents/Projects/web-tobi-backend/app.js:15:20)
+(node:5986) DeprecationWarning: current Server Discovery and Monitoring engine is deprecated, and will be removed in a future version. To use the new Server Discover and Monitoring engine, pass option { useUnifiedTopology: true } to the MongoClient constructor.
+(node:5998) DeprecationWarning: current Server Discovery and Monitoring engine is deprecated, and will be removed in a future version. To use the new Server Discover and Monitoring engine, pass option { useUnifiedTopology: true } to the MongoClient constructor.
+null
+null
+(node:6031) DeprecationWarning: current Server Discovery and Monitoring engine is deprecated, and will be removed in a future version. To use the new Server Discover and Monitoring engine, pass option { useUnifiedTopology: true } to the MongoClient constructor.
+(node:6044) DeprecationWarning: current Server Discovery and Monitoring engine is deprecated, and will be removed in a future version. To use the new Server Discover and Monitoring engine, pass option { useUnifiedTopology: true } to the MongoClient constructor.
+(node:6064) DeprecationWarning: current Server Discovery and Monitoring engine is deprecated, and will be removed in a future version. To use the new Server Discover and Monitoring engine, pass option { useUnifiedTopology: true } to the MongoClient constructor.
+(node:6116) DeprecationWarning: current Server Discovery and Monitoring engine is deprecated, and will be removed in a future version. To use the new Server Discover and Monitoring engine, pass option { useUnifiedTopology: true } to the MongoClient constructor.
+null
+(node:6643) DeprecationWarning: current Server Discovery and Monitoring engine is deprecated, and will be removed in a future version. To use the new Server Discover and Monitoring engine, pass option { useUnifiedTopology: true } to the MongoClient constructor.
+(node:6662) DeprecationWarning: current Server Discovery and Monitoring engine is deprecated, and will be removed in a future version. To use the new Server Discover and Monitoring engine, pass option { useUnifiedTopology: true } to the MongoClient constructor.
+(node:6728) DeprecationWarning: current Server Discovery and Monitoring engine is deprecated, and will be removed in a future version. To use the new Server Discover and Monitoring engine, pass option { useUnifiedTopology: true } to the MongoClient constructor.
+(node:6741) DeprecationWarning: current Server Discovery and Monitoring engine is deprecated, and will be removed in a future version. To use the new Server Discover and Monitoring engine, pass option { useUnifiedTopology: true } to the MongoClient constructor.
+(node:6755) DeprecationWarning: current Server Discovery and Monitoring engine is deprecated, and will be removed in a future version. To use the new Server Discover and Monitoring engine, pass option { useUnifiedTopology: true } to the MongoClient constructor.
+null
+null
+/Users/aerlaut/Documents/Projects/web-tobi-backend/routes/file.js:5
+const upload = multer({ dest: path.join(__dirname, '../storage/') })
+                              ^
 
-SyntaxError: await is only valid in async function
-    at Module._compile (internal/modules/cjs/loader.js:723:23)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
-    at Module.load (internal/modules/cjs/loader.js:653:32)
-    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
-    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
-    at Module.require (internal/modules/cjs/loader.js:692:17)
-    at require (internal/modules/cjs/helpers.js:25:18)
-    at Object.<anonymous> (/Users/aerlaut/Documents/Projects/web-tobi-backend/routes/user.js:9:24)
+ReferenceError: path is not defined
+    at Object.<anonymous> (/Users/aerlaut/Documents/Projects/web-tobi-backend/routes/file.js:5:31)
     at Module._compile (internal/modules/cjs/loader.js:778:30)
     at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
     at Module.load (internal/modules/cjs/loader.js:653:32)
@@ -175,20 +123,20 @@ SyntaxError: await is only valid in async function
     at Function.Module._load (internal/modules/cjs/loader.js:585:3)
     at Module.require (internal/modules/cjs/loader.js:692:17)
     at require (internal/modules/cjs/helpers.js:25:18)
-    at Object.<anonymous> (/Users/aerlaut/Documents/Projects/web-tobi-backend/app.js:11:20)
-/Users/aerlaut/Documents/Projects/web-tobi-backend/controllers/UserController.js:67
-	payload.id = await counter.getNewId('User')
-	             ^^^^^
+    at Object.<anonymous> (/Users/aerlaut/Documents/Projects/web-tobi-backend/app.js:15:20)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:831:12)
+    at startup (internal/bootstrap/node.js:283:19)
+/Users/aerlaut/Documents/Projects/web-tobi-backend/routes/file.js:5
+const upload = multer({ dest: path.join(__dirname, '../storage/') })
+                              ^
 
-SyntaxError: await is only valid in async function
-    at Module._compile (internal/modules/cjs/loader.js:723:23)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
-    at Module.load (internal/modules/cjs/loader.js:653:32)
-    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
-    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
-    at Module.require (internal/modules/cjs/loader.js:692:17)
-    at require (internal/modules/cjs/helpers.js:25:18)
-    at Object.<anonymous> (/Users/aerlaut/Documents/Projects/web-tobi-backend/routes/user.js:9:24)
+ReferenceError: path is not defined
+    at Object.<anonymous> (/Users/aerlaut/Documents/Projects/web-tobi-backend/routes/file.js:5:31)
     at Module._compile (internal/modules/cjs/loader.js:778:30)
     at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
     at Module.load (internal/modules/cjs/loader.js:653:32)
@@ -196,20 +144,20 @@ SyntaxError: await is only valid in async function
     at Function.Module._load (internal/modules/cjs/loader.js:585:3)
     at Module.require (internal/modules/cjs/loader.js:692:17)
     at require (internal/modules/cjs/helpers.js:25:18)
-    at Object.<anonymous> (/Users/aerlaut/Documents/Projects/web-tobi-backend/app.js:11:20)
-/Users/aerlaut/Documents/Projects/web-tobi-backend/controllers/UserController.js:67
-	payload.id = await counter.getNewId('User')
-	             ^^^^^
+    at Object.<anonymous> (/Users/aerlaut/Documents/Projects/web-tobi-backend/app.js:15:20)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:831:12)
+    at startup (internal/bootstrap/node.js:283:19)
+/Users/aerlaut/Documents/Projects/web-tobi-backend/routes/file.js:5
+const upload = multer({ dest: path.join(__dirname, '../storage/') })
+                              ^
 
-SyntaxError: await is only valid in async function
-    at Module._compile (internal/modules/cjs/loader.js:723:23)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
-    at Module.load (internal/modules/cjs/loader.js:653:32)
-    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
-    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
-    at Module.require (internal/modules/cjs/loader.js:692:17)
-    at require (internal/modules/cjs/helpers.js:25:18)
-    at Object.<anonymous> (/Users/aerlaut/Documents/Projects/web-tobi-backend/routes/user.js:9:24)
+ReferenceError: path is not defined
+    at Object.<anonymous> (/Users/aerlaut/Documents/Projects/web-tobi-backend/routes/file.js:5:31)
     at Module._compile (internal/modules/cjs/loader.js:778:30)
     at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
     at Module.load (internal/modules/cjs/loader.js:653:32)
@@ -217,20 +165,20 @@ SyntaxError: await is only valid in async function
     at Function.Module._load (internal/modules/cjs/loader.js:585:3)
     at Module.require (internal/modules/cjs/loader.js:692:17)
     at require (internal/modules/cjs/helpers.js:25:18)
-    at Object.<anonymous> (/Users/aerlaut/Documents/Projects/web-tobi-backend/app.js:11:20)
-/Users/aerlaut/Documents/Projects/web-tobi-backend/controllers/UserController.js:67
-	payload.id = await counter.getNewId('User')
-	             ^^^^^
+    at Object.<anonymous> (/Users/aerlaut/Documents/Projects/web-tobi-backend/app.js:15:20)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:831:12)
+    at startup (internal/bootstrap/node.js:283:19)
+/Users/aerlaut/Documents/Projects/web-tobi-backend/routes/file.js:5
+const upload = multer({ dest: path.join(__dirname, '../storage/') })
+                              ^
 
-SyntaxError: await is only valid in async function
-    at Module._compile (internal/modules/cjs/loader.js:723:23)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
-    at Module.load (internal/modules/cjs/loader.js:653:32)
-    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
-    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
-    at Module.require (internal/modules/cjs/loader.js:692:17)
-    at require (internal/modules/cjs/helpers.js:25:18)
-    at Object.<anonymous> (/Users/aerlaut/Documents/Projects/web-tobi-backend/routes/user.js:9:24)
+ReferenceError: path is not defined
+    at Object.<anonymous> (/Users/aerlaut/Documents/Projects/web-tobi-backend/routes/file.js:5:31)
     at Module._compile (internal/modules/cjs/loader.js:778:30)
     at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
     at Module.load (internal/modules/cjs/loader.js:653:32)
@@ -238,476 +186,29 @@ SyntaxError: await is only valid in async function
     at Function.Module._load (internal/modules/cjs/loader.js:585:3)
     at Module.require (internal/modules/cjs/loader.js:692:17)
     at require (internal/modules/cjs/helpers.js:25:18)
-    at Object.<anonymous> (/Users/aerlaut/Documents/Projects/web-tobi-backend/app.js:11:20)
-/Users/aerlaut/Documents/Projects/web-tobi-backend/controllers/UserController.js:67
-	payload.id = await counter.getNewId('User')
-	             ^^^^^
-
-SyntaxError: await is only valid in async function
-    at Module._compile (internal/modules/cjs/loader.js:723:23)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
-    at Module.load (internal/modules/cjs/loader.js:653:32)
-    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
-    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
-    at Module.require (internal/modules/cjs/loader.js:692:17)
-    at require (internal/modules/cjs/helpers.js:25:18)
-    at Object.<anonymous> (/Users/aerlaut/Documents/Projects/web-tobi-backend/routes/user.js:9:24)
+    at Object.<anonymous> (/Users/aerlaut/Documents/Projects/web-tobi-backend/app.js:15:20)
     at Module._compile (internal/modules/cjs/loader.js:778:30)
     at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
     at Module.load (internal/modules/cjs/loader.js:653:32)
     at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
     at Function.Module._load (internal/modules/cjs/loader.js:585:3)
-    at Module.require (internal/modules/cjs/loader.js:692:17)
-    at require (internal/modules/cjs/helpers.js:25:18)
-    at Object.<anonymous> (/Users/aerlaut/Documents/Projects/web-tobi-backend/app.js:11:20)
-/Users/aerlaut/Documents/Projects/web-tobi-backend/controllers/UserController.js:67
-	payload.id = await counter.getNewId('User')
-	             ^^^^^
-
-SyntaxError: await is only valid in async function
-    at Module._compile (internal/modules/cjs/loader.js:723:23)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
-    at Module.load (internal/modules/cjs/loader.js:653:32)
-    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
-    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
-    at Module.require (internal/modules/cjs/loader.js:692:17)
-    at require (internal/modules/cjs/helpers.js:25:18)
-    at Object.<anonymous> (/Users/aerlaut/Documents/Projects/web-tobi-backend/routes/user.js:9:24)
-    at Module._compile (internal/modules/cjs/loader.js:778:30)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
-    at Module.load (internal/modules/cjs/loader.js:653:32)
-    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
-    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
-    at Module.require (internal/modules/cjs/loader.js:692:17)
-    at require (internal/modules/cjs/helpers.js:25:18)
-    at Object.<anonymous> (/Users/aerlaut/Documents/Projects/web-tobi-backend/app.js:11:20)
-/Users/aerlaut/Documents/Projects/web-tobi-backend/controllers/UserController.js:67
-	payload.id = await counter.getNewId('User')
-	             ^^^^^
-
-SyntaxError: await is only valid in async function
-    at Module._compile (internal/modules/cjs/loader.js:723:23)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
-    at Module.load (internal/modules/cjs/loader.js:653:32)
-    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
-    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
-    at Module.require (internal/modules/cjs/loader.js:692:17)
-    at require (internal/modules/cjs/helpers.js:25:18)
-    at Object.<anonymous> (/Users/aerlaut/Documents/Projects/web-tobi-backend/routes/user.js:9:24)
-    at Module._compile (internal/modules/cjs/loader.js:778:30)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
-    at Module.load (internal/modules/cjs/loader.js:653:32)
-    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
-    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
-    at Module.require (internal/modules/cjs/loader.js:692:17)
-    at require (internal/modules/cjs/helpers.js:25:18)
-    at Object.<anonymous> (/Users/aerlaut/Documents/Projects/web-tobi-backend/app.js:11:20)
-/Users/aerlaut/Documents/Projects/web-tobi-backend/controllers/UserController.js:67
-	payload.id = await counter.getNewId('User')
-	             ^^^^^
-
-SyntaxError: await is only valid in async function
-    at Module._compile (internal/modules/cjs/loader.js:723:23)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
-    at Module.load (internal/modules/cjs/loader.js:653:32)
-    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
-    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
-    at Module.require (internal/modules/cjs/loader.js:692:17)
-    at require (internal/modules/cjs/helpers.js:25:18)
-    at Object.<anonymous> (/Users/aerlaut/Documents/Projects/web-tobi-backend/routes/user.js:9:24)
-    at Module._compile (internal/modules/cjs/loader.js:778:30)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
-    at Module.load (internal/modules/cjs/loader.js:653:32)
-    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
-    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
-    at Module.require (internal/modules/cjs/loader.js:692:17)
-    at require (internal/modules/cjs/helpers.js:25:18)
-    at Object.<anonymous> (/Users/aerlaut/Documents/Projects/web-tobi-backend/app.js:11:20)
-(node:2112) MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 exit listeners added. Use emitter.setMaxListeners() to increase limit
-/Users/aerlaut/Documents/Projects/web-tobi-backend/controllers/UserController.js:67
-	payload.id = await counter.getNewId('User')
-	             ^^^^^
-
-SyntaxError: await is only valid in async function
-    at Module._compile (internal/modules/cjs/loader.js:723:23)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
-    at Module.load (internal/modules/cjs/loader.js:653:32)
-    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
-    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
-    at Module.require (internal/modules/cjs/loader.js:692:17)
-    at require (internal/modules/cjs/helpers.js:25:18)
-    at Object.<anonymous> (/Users/aerlaut/Documents/Projects/web-tobi-backend/routes/user.js:9:24)
-    at Module._compile (internal/modules/cjs/loader.js:778:30)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
-    at Module.load (internal/modules/cjs/loader.js:653:32)
-    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
-    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
-    at Module.require (internal/modules/cjs/loader.js:692:17)
-    at require (internal/modules/cjs/helpers.js:25:18)
-    at Object.<anonymous> (/Users/aerlaut/Documents/Projects/web-tobi-backend/app.js:11:20)
-/Users/aerlaut/Documents/Projects/web-tobi-backend/controllers/UserController.js:67
-	payload.id = await counter.getNewId('User')
-	             ^^^^^
-
-SyntaxError: await is only valid in async function
-    at Module._compile (internal/modules/cjs/loader.js:723:23)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
-    at Module.load (internal/modules/cjs/loader.js:653:32)
-    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
-    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
-    at Module.require (internal/modules/cjs/loader.js:692:17)
-    at require (internal/modules/cjs/helpers.js:25:18)
-    at Object.<anonymous> (/Users/aerlaut/Documents/Projects/web-tobi-backend/routes/user.js:9:24)
-    at Module._compile (internal/modules/cjs/loader.js:778:30)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
-    at Module.load (internal/modules/cjs/loader.js:653:32)
-    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
-    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
-    at Module.require (internal/modules/cjs/loader.js:692:17)
-    at require (internal/modules/cjs/helpers.js:25:18)
-    at Object.<anonymous> (/Users/aerlaut/Documents/Projects/web-tobi-backend/app.js:11:20)
-/Users/aerlaut/Documents/Projects/web-tobi-backend/controllers/UserController.js:67
-	payload.id = await counter.getNewId('User')
-	             ^^^^^
-
-SyntaxError: await is only valid in async function
-    at Module._compile (internal/modules/cjs/loader.js:723:23)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
-    at Module.load (internal/modules/cjs/loader.js:653:32)
-    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
-    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
-    at Module.require (internal/modules/cjs/loader.js:692:17)
-    at require (internal/modules/cjs/helpers.js:25:18)
-    at Object.<anonymous> (/Users/aerlaut/Documents/Projects/web-tobi-backend/routes/user.js:9:24)
-    at Module._compile (internal/modules/cjs/loader.js:778:30)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
-    at Module.load (internal/modules/cjs/loader.js:653:32)
-    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
-    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
-    at Module.require (internal/modules/cjs/loader.js:692:17)
-    at require (internal/modules/cjs/helpers.js:25:18)
-    at Object.<anonymous> (/Users/aerlaut/Documents/Projects/web-tobi-backend/app.js:11:20)
-/Users/aerlaut/Documents/Projects/web-tobi-backend/controllers/UserController.js:67
-	payload.id = await counter.getNewId('User')
-	             ^^^^^
-
-SyntaxError: await is only valid in async function
-    at Module._compile (internal/modules/cjs/loader.js:723:23)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
-    at Module.load (internal/modules/cjs/loader.js:653:32)
-    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
-    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
-    at Module.require (internal/modules/cjs/loader.js:692:17)
-    at require (internal/modules/cjs/helpers.js:25:18)
-    at Object.<anonymous> (/Users/aerlaut/Documents/Projects/web-tobi-backend/routes/user.js:9:24)
-    at Module._compile (internal/modules/cjs/loader.js:778:30)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
-    at Module.load (internal/modules/cjs/loader.js:653:32)
-    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
-    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
-    at Module.require (internal/modules/cjs/loader.js:692:17)
-    at require (internal/modules/cjs/helpers.js:25:18)
-    at Object.<anonymous> (/Users/aerlaut/Documents/Projects/web-tobi-backend/app.js:11:20)
-/Users/aerlaut/Documents/Projects/web-tobi-backend/controllers/UserController.js:67
-	payload.id = await counter.getNewId('User')
-	             ^^^^^
-
-SyntaxError: await is only valid in async function
-    at Module._compile (internal/modules/cjs/loader.js:723:23)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
-    at Module.load (internal/modules/cjs/loader.js:653:32)
-    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
-    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
-    at Module.require (internal/modules/cjs/loader.js:692:17)
-    at require (internal/modules/cjs/helpers.js:25:18)
-    at Object.<anonymous> (/Users/aerlaut/Documents/Projects/web-tobi-backend/routes/user.js:9:24)
-    at Module._compile (internal/modules/cjs/loader.js:778:30)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
-    at Module.load (internal/modules/cjs/loader.js:653:32)
-    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
-    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
-    at Module.require (internal/modules/cjs/loader.js:692:17)
-    at require (internal/modules/cjs/helpers.js:25:18)
-    at Object.<anonymous> (/Users/aerlaut/Documents/Projects/web-tobi-backend/app.js:11:20)
-/Users/aerlaut/Documents/Projects/web-tobi-backend/controllers/UserController.js:67
-	payload.id = await counter.getNewId('User')
-	             ^^^^^
-
-SyntaxError: await is only valid in async function
-    at Module._compile (internal/modules/cjs/loader.js:723:23)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
-    at Module.load (internal/modules/cjs/loader.js:653:32)
-    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
-    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
-    at Module.require (internal/modules/cjs/loader.js:692:17)
-    at require (internal/modules/cjs/helpers.js:25:18)
-    at Object.<anonymous> (/Users/aerlaut/Documents/Projects/web-tobi-backend/routes/user.js:9:24)
-    at Module._compile (internal/modules/cjs/loader.js:778:30)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
-    at Module.load (internal/modules/cjs/loader.js:653:32)
-    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
-    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
-    at Module.require (internal/modules/cjs/loader.js:692:17)
-    at require (internal/modules/cjs/helpers.js:25:18)
-    at Object.<anonymous> (/Users/aerlaut/Documents/Projects/web-tobi-backend/app.js:11:20)
-/Users/aerlaut/Documents/Projects/web-tobi-backend/controllers/UserController.js:67
-	payload.id = await counter.getNewId('User')
-	             ^^^^^
-
-SyntaxError: await is only valid in async function
-    at Module._compile (internal/modules/cjs/loader.js:723:23)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
-    at Module.load (internal/modules/cjs/loader.js:653:32)
-    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
-    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
-    at Module.require (internal/modules/cjs/loader.js:692:17)
-    at require (internal/modules/cjs/helpers.js:25:18)
-    at Object.<anonymous> (/Users/aerlaut/Documents/Projects/web-tobi-backend/routes/user.js:9:24)
-    at Module._compile (internal/modules/cjs/loader.js:778:30)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
-    at Module.load (internal/modules/cjs/loader.js:653:32)
-    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
-    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
-    at Module.require (internal/modules/cjs/loader.js:692:17)
-    at require (internal/modules/cjs/helpers.js:25:18)
-    at Object.<anonymous> (/Users/aerlaut/Documents/Projects/web-tobi-backend/app.js:11:20)
-/Users/aerlaut/Documents/Projects/web-tobi-backend/controllers/UserController.js:67
-	payload.id = await counter.getNewId('User')
-	             ^^^^^
-
-SyntaxError: await is only valid in async function
-    at Module._compile (internal/modules/cjs/loader.js:723:23)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
-    at Module.load (internal/modules/cjs/loader.js:653:32)
-    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
-    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
-    at Module.require (internal/modules/cjs/loader.js:692:17)
-    at require (internal/modules/cjs/helpers.js:25:18)
-    at Object.<anonymous> (/Users/aerlaut/Documents/Projects/web-tobi-backend/routes/user.js:9:24)
-    at Module._compile (internal/modules/cjs/loader.js:778:30)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
-    at Module.load (internal/modules/cjs/loader.js:653:32)
-    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
-    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
-    at Module.require (internal/modules/cjs/loader.js:692:17)
-    at require (internal/modules/cjs/helpers.js:25:18)
-    at Object.<anonymous> (/Users/aerlaut/Documents/Projects/web-tobi-backend/app.js:11:20)
-/Users/aerlaut/Documents/Projects/web-tobi-backend/controllers/QuestionController.js:30
-  payload.id = await counter.getNewId('User')
-               ^^^^^
-
-SyntaxError: await is only valid in async function
-    at Module._compile (internal/modules/cjs/loader.js:723:23)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
-    at Module.load (internal/modules/cjs/loader.js:653:32)
-    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
-    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
-    at Module.require (internal/modules/cjs/loader.js:692:17)
-    at require (internal/modules/cjs/helpers.js:25:18)
-    at Object.<anonymous> (/Users/aerlaut/Documents/Projects/web-tobi-backend/routes/question.js:7:28)
-    at Module._compile (internal/modules/cjs/loader.js:778:30)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
-    at Module.load (internal/modules/cjs/loader.js:653:32)
-    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
-    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
-    at Module.require (internal/modules/cjs/loader.js:692:17)
-    at require (internal/modules/cjs/helpers.js:25:18)
-    at Object.<anonymous> (/Users/aerlaut/Documents/Projects/web-tobi-backend/app.js:14:24)
-(node:2112) MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 exit listeners added. Use emitter.setMaxListeners() to increase limit
-/Users/aerlaut/Documents/Projects/web-tobi-backend/controllers/QuestionController.js:30
-  payload.id = await counter.getNewId('User')
-               ^^^^^
-
-SyntaxError: await is only valid in async function
-    at Module._compile (internal/modules/cjs/loader.js:723:23)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
-    at Module.load (internal/modules/cjs/loader.js:653:32)
-    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
-    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
-    at Module.require (internal/modules/cjs/loader.js:692:17)
-    at require (internal/modules/cjs/helpers.js:25:18)
-    at Object.<anonymous> (/Users/aerlaut/Documents/Projects/web-tobi-backend/routes/question.js:7:28)
-    at Module._compile (internal/modules/cjs/loader.js:778:30)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
-    at Module.load (internal/modules/cjs/loader.js:653:32)
-    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
-    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
-    at Module.require (internal/modules/cjs/loader.js:692:17)
-    at require (internal/modules/cjs/helpers.js:25:18)
-    at Object.<anonymous> (/Users/aerlaut/Documents/Projects/web-tobi-backend/app.js:14:24)
-/Users/aerlaut/Documents/Projects/web-tobi-backend/controllers/QuestionController.js:30
-  payload.id = await counter.getNewId('User')
-               ^^^^^
-
-SyntaxError: await is only valid in async function
-    at Module._compile (internal/modules/cjs/loader.js:723:23)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
-    at Module.load (internal/modules/cjs/loader.js:653:32)
-    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
-    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
-    at Module.require (internal/modules/cjs/loader.js:692:17)
-    at require (internal/modules/cjs/helpers.js:25:18)
-    at Object.<anonymous> (/Users/aerlaut/Documents/Projects/web-tobi-backend/routes/question.js:7:28)
-    at Module._compile (internal/modules/cjs/loader.js:778:30)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
-    at Module.load (internal/modules/cjs/loader.js:653:32)
-    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
-    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
-    at Module.require (internal/modules/cjs/loader.js:692:17)
-    at require (internal/modules/cjs/helpers.js:25:18)
-    at Object.<anonymous> (/Users/aerlaut/Documents/Projects/web-tobi-backend/app.js:14:24)
-/Users/aerlaut/Documents/Projects/web-tobi-backend/controllers/QuestionController.js:30
-  payload.id = await counter.getNewId('User')
-               ^^^^^
-
-SyntaxError: await is only valid in async function
-    at Module._compile (internal/modules/cjs/loader.js:723:23)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
-    at Module.load (internal/modules/cjs/loader.js:653:32)
-    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
-    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
-    at Module.require (internal/modules/cjs/loader.js:692:17)
-    at require (internal/modules/cjs/helpers.js:25:18)
-    at Object.<anonymous> (/Users/aerlaut/Documents/Projects/web-tobi-backend/routes/question.js:7:28)
-    at Module._compile (internal/modules/cjs/loader.js:778:30)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
-    at Module.load (internal/modules/cjs/loader.js:653:32)
-    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
-    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
-    at Module.require (internal/modules/cjs/loader.js:692:17)
-    at require (internal/modules/cjs/helpers.js:25:18)
-    at Object.<anonymous> (/Users/aerlaut/Documents/Projects/web-tobi-backend/app.js:14:24)
-/Users/aerlaut/Documents/Projects/web-tobi-backend/controllers/QuestionController.js:30
-  payload.id = await counter.getNewId('User')
-               ^^^^^
-
-SyntaxError: await is only valid in async function
-    at Module._compile (internal/modules/cjs/loader.js:723:23)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
-    at Module.load (internal/modules/cjs/loader.js:653:32)
-    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
-    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
-    at Module.require (internal/modules/cjs/loader.js:692:17)
-    at require (internal/modules/cjs/helpers.js:25:18)
-    at Object.<anonymous> (/Users/aerlaut/Documents/Projects/web-tobi-backend/routes/question.js:7:28)
-    at Module._compile (internal/modules/cjs/loader.js:778:30)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
-    at Module.load (internal/modules/cjs/loader.js:653:32)
-    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
-    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
-    at Module.require (internal/modules/cjs/loader.js:692:17)
-    at require (internal/modules/cjs/helpers.js:25:18)
-    at Object.<anonymous> (/Users/aerlaut/Documents/Projects/web-tobi-backend/app.js:14:24)
-/Users/aerlaut/Documents/Projects/web-tobi-backend/controllers/QuestionController.js:28
-  let counter = new Counter()
-  ^^^
-
-SyntaxError: Unexpected identifier
-    at Module._compile (internal/modules/cjs/loader.js:723:23)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
-    at Module.load (internal/modules/cjs/loader.js:653:32)
-    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
-    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
-    at Module.require (internal/modules/cjs/loader.js:692:17)
-    at require (internal/modules/cjs/helpers.js:25:18)
-    at Object.<anonymous> (/Users/aerlaut/Documents/Projects/web-tobi-backend/routes/question.js:7:28)
-    at Module._compile (internal/modules/cjs/loader.js:778:30)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
-    at Module.load (internal/modules/cjs/loader.js:653:32)
-    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
-    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
-    at Module.require (internal/modules/cjs/loader.js:692:17)
-    at require (internal/modules/cjs/helpers.js:25:18)
-    at Object.<anonymous> (/Users/aerlaut/Documents/Projects/web-tobi-backend/app.js:14:24)
-/Users/aerlaut/Documents/Projects/web-tobi-backend/controllers/QuestionController.js:28
-  let counter = new Counter()
-  ^^^
-
-SyntaxError: Unexpected identifier
-    at Module._compile (internal/modules/cjs/loader.js:723:23)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
-    at Module.load (internal/modules/cjs/loader.js:653:32)
-    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
-    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
-    at Module.require (internal/modules/cjs/loader.js:692:17)
-    at require (internal/modules/cjs/helpers.js:25:18)
-    at Object.<anonymous> (/Users/aerlaut/Documents/Projects/web-tobi-backend/routes/question.js:7:28)
-    at Module._compile (internal/modules/cjs/loader.js:778:30)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
-    at Module.load (internal/modules/cjs/loader.js:653:32)
-    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
-    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
-    at Module.require (internal/modules/cjs/loader.js:692:17)
-    at require (internal/modules/cjs/helpers.js:25:18)
-    at Object.<anonymous> (/Users/aerlaut/Documents/Projects/web-tobi-backend/app.js:14:24)
-(node:3640) DeprecationWarning: current Server Discovery and Monitoring engine is deprecated, and will be removed in a future version. To use the new Server Discover and Monitoring engine, pass option { useUnifiedTopology: true } to the MongoClient constructor.
-(node:3652) DeprecationWarning: current Server Discovery and Monitoring engine is deprecated, and will be removed in a future version. To use the new Server Discover and Monitoring engine, pass option { useUnifiedTopology: true } to the MongoClient constructor.
+    at Function.Module.runMain (internal/modules/cjs/loader.js:831:12)
+    at startup (internal/bootstrap/node.js:283:19)
+(node:6905) DeprecationWarning: current Server Discovery and Monitoring engine is deprecated, and will be removed in a future version. To use the new Server Discover and Monitoring engine, pass option { useUnifiedTopology: true } to the MongoClient constructor.
 null
 null
+(node:6984) DeprecationWarning: current Server Discovery and Monitoring engine is deprecated, and will be removed in a future version. To use the new Server Discover and Monitoring engine, pass option { useUnifiedTopology: true } to the MongoClient constructor.
+(node:6996) DeprecationWarning: current Server Discovery and Monitoring engine is deprecated, and will be removed in a future version. To use the new Server Discover and Monitoring engine, pass option { useUnifiedTopology: true } to the MongoClient constructor.
 null
+(node:7024) DeprecationWarning: current Server Discovery and Monitoring engine is deprecated, and will be removed in a future version. To use the new Server Discover and Monitoring engine, pass option { useUnifiedTopology: true } to the MongoClient constructor.
+(node:7040) DeprecationWarning: current Server Discovery and Monitoring engine is deprecated, and will be removed in a future version. To use the new Server Discover and Monitoring engine, pass option { useUnifiedTopology: true } to the MongoClient constructor.
 null
+(node:7070) DeprecationWarning: current Server Discovery and Monitoring engine is deprecated, and will be removed in a future version. To use the new Server Discover and Monitoring engine, pass option { useUnifiedTopology: true } to the MongoClient constructor.
+(node:7082) DeprecationWarning: current Server Discovery and Monitoring engine is deprecated, and will be removed in a future version. To use the new Server Discover and Monitoring engine, pass option { useUnifiedTopology: true } to the MongoClient constructor.
+(node:7132) DeprecationWarning: current Server Discovery and Monitoring engine is deprecated, and will be removed in a future version. To use the new Server Discover and Monitoring engine, pass option { useUnifiedTopology: true } to the MongoClient constructor.
 null
-null
-null
-null
-null
-null
-(node:4795) DeprecationWarning: current Server Discovery and Monitoring engine is deprecated, and will be removed in a future version. To use the new Server Discover and Monitoring engine, pass option { useUnifiedTopology: true } to the MongoClient constructor.
-null
-(node:4837) DeprecationWarning: current Server Discovery and Monitoring engine is deprecated, and will be removed in a future version. To use the new Server Discover and Monitoring engine, pass option { useUnifiedTopology: true } to the MongoClient constructor.
-null
-null
-null
-null
-null
-null
-null
-null
-null
-null
-null
-null
-null
-null
-null
-(node:5086) DeprecationWarning: current Server Discovery and Monitoring engine is deprecated, and will be removed in a future version. To use the new Server Discover and Monitoring engine, pass option { useUnifiedTopology: true } to the MongoClient constructor.
-(node:5107) DeprecationWarning: current Server Discovery and Monitoring engine is deprecated, and will be removed in a future version. To use the new Server Discover and Monitoring engine, pass option { useUnifiedTopology: true } to the MongoClient constructor.
-(node:5124) DeprecationWarning: current Server Discovery and Monitoring engine is deprecated, and will be removed in a future version. To use the new Server Discover and Monitoring engine, pass option { useUnifiedTopology: true } to the MongoClient constructor.
-null
-(node:5185) DeprecationWarning: current Server Discovery and Monitoring engine is deprecated, and will be removed in a future version. To use the new Server Discover and Monitoring engine, pass option { useUnifiedTopology: true } to the MongoClient constructor.
-(node:5213) DeprecationWarning: current Server Discovery and Monitoring engine is deprecated, and will be removed in a future version. To use the new Server Discover and Monitoring engine, pass option { useUnifiedTopology: true } to the MongoClient constructor.
-null
-null
-null
-null
-null
-null
-null
-null
-null
-null
-null
-null
-null
-null
-null
-null
-null
-null
-null
-null
-null
-null
-null
-null
-null
-null
-null
-null
-null
-null
-null
-null
+(node:7177) DeprecationWarning: current Server Discovery and Monitoring engine is deprecated, and will be removed in a future version. To use the new Server Discover and Monitoring engine, pass option { useUnifiedTopology: true } to the MongoClient constructor.
+(node:7195) DeprecationWarning: current Server Discovery and Monitoring engine is deprecated, and will be removed in a future version. To use the new Server Discover and Monitoring engine, pass option { useUnifiedTopology: true } to the MongoClient constructor.
 null
 null
 null

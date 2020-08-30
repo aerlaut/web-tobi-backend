@@ -12,6 +12,7 @@ const UserRouter = require('./routes/user')
 const AuthRouter = require('./routes/auth')
 const DashboardRouter = require('./routes/dashboard')
 const QuestionRouter = require('./routes/question')
+const FileRouter = require('./routes/file')
 
 // Initialize app
 const app = express()
@@ -28,12 +29,14 @@ mongoose
 app.use(cors())
 app.use(express.json())
 app.use(express.urlencoded({ extended: false }))
+app.use('/public', express.static('public'))
 
 // app.use('/', IndexRouter)
 app.use('/auth', AuthRouter)
 app.use('/user', UserRouter)
 app.use('/dashboard', DashboardRouter)
 app.use('/question', QuestionRouter)
+app.use('/file', FileRouter)
 
 app.listen(process.env.APP_PORT, () => {
 	console.log(`App listening at http://localhost:${process.env.APP_PORT}`)

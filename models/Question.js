@@ -1,6 +1,6 @@
-let mongoose = require('mongoose')
+const mongoose = require('mongoose')
 
-let QuestionItemSchema = new mongoose.Schema({
+const QuestionItemSchema = new mongoose.Schema({
 	type: {
 		type: String,
 		required: true,
@@ -14,7 +14,7 @@ let QuestionItemSchema = new mongoose.Schema({
 	},
 })
 
-let QuestionSchema = new mongoose.Schema({
+const QuestionSchema = new mongoose.Schema({
 	id: {
 		type: Number,
 		index: true,
