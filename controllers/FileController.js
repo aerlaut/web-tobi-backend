@@ -23,14 +23,37 @@ exports.store = (req, res) => {
 			size: req.file.size,
 			owner: { type: req.body.ownerType },
 		})
-		file.id = await counter.getNewId('File')
 
-		return file.save()
+		// If file already found, updating old file
+
+		const _id = await File.findOne({ path: newPath }, '_id').exec()
+
+		if (_id === null) {
+			console.log('new object')
+
+			file.id = await counter.getNewId('File')
+			return file.save()
+		} else {
+			console.log('old file')
+			return File.findByIdAndUpdate(
+				_id,
+				{
+					path: file.path,
+					link: file.link,
+					name: file.name,
+					mimetype: file.mimetype,
+					size: file.size,
+				},
+				{ new: true }
+			).exec()
+		}
 	}
 
 	create()
 		.then((doc) => {
-			// Adding link as required by react-draft-wysiwyg
+			console.log('test')
+			console.log(doc)
+
 			return res.json({
 				status: 'ok',
 				message: 'Resource created',
@@ -38,6 +61,8 @@ exports.store = (req, res) => {
 			})
 		})
 		.catch((err) => {
+			console.log(err)
+
 			if (err.code == 11000 && err.keyPattern.id) {
 				let field = Object.keys(err.keyPattern)[0]
 

@@ -14,38 +14,43 @@ const FileOwnerSchema = new mongoose.Schema({
 	},
 })
 
-const FileSchema = new mongoose.Schema({
-	id: {
-		type: Number,
-		required: true,
-		unique: true,
+const FileSchema = new mongoose.Schema(
+	{
+		id: {
+			type: Number,
+			required: true,
+			unique: true,
+		},
+		name: {
+			type: String,
+			required: true,
+		},
+		path: {
+			type: String,
+			required: true,
+			unique: true,
+		},
+		link: {
+			type: String,
+			required: true,
+			unique: true,
+		},
+		mimetype: {
+			type: String,
+			required: true,
+		},
+		size: {
+			type: Number,
+			required: true,
+		},
+		owner: {
+			type: FileOwnerSchema,
+			required: true,
+		},
 	},
-	name: {
-		type: String,
-		required: true,
-	},
-	path: {
-		type: String,
-		required: true,
-		unique: true,
-	},
-	link: {
-		type: String,
-		required: true,
-		unique: true,
-	},
-	mimetype: {
-		type: String,
-		required: true,
-	},
-	size: {
-		type: Number,
-		required: true,
-	},
-	owner: {
-		type: FileOwnerSchema,
-		required: true,
-	},
-})
+	{
+		timestamps: true,
+	}
+)
 
 module.exports = mongoose.model('File', FileSchema)
