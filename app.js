@@ -16,7 +16,7 @@ const FileRouter = require('./routes/file')
 
 // Initialize app
 const app = express()
-const DBURI = `mongodb://${process.env.DB_HOST}:${process.env.DB_PORT}/${process.env.DB_NAME}`
+const DBURI = `mongodb://${process.env.DB_USERNAME}:${process.env.DB_PASSWORD}@${process.env.DB_HOST}:${process.env.DB_PORT}/${process.env.DB_NAME}?authSource=admin`
 
 mongoose
 	.connect(DBURI, {
@@ -39,5 +39,6 @@ app.use('/question', QuestionRouter)
 app.use('/file', FileRouter)
 
 app.listen(process.env.APP_PORT, () => {
+	console.log(DBURI)
 	console.log(`App listening at http://localhost:${process.env.APP_PORT}`)
 })
