@@ -12,6 +12,13 @@ const QuestionItemSchema = new mongoose.Schema({
 	score: {
 		type: Number,
 	},
+	question: {
+		type: String,
+		required: true,
+	},
+	label: {
+		type: String,
+	},
 })
 
 const QuestionSchema = new mongoose.Schema(

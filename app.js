@@ -32,11 +32,11 @@ app.use(express.urlencoded({ extended: false }))
 app.use('/public', express.static('public'))
 
 // app.use('/', IndexRouter)
-app.use('/auth', AuthRouter)
-app.use('/user', UserRouter)
-app.use('/dashboard', DashboardRouter)
-app.use('/question', QuestionRouter)
-app.use('/file', FileRouter)
+app.use('/api/auth', AuthRouter)
+app.use('/api/user', UserRouter)
+app.use('/api/dashboard', DashboardRouter)
+app.use('/api/question', QuestionRouter)
+app.use('/api/file', FileRouter)
 
 app.listen(process.env.APP_PORT, () => {
 	console.log(DBURI)
