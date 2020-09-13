@@ -1,27 +1,6 @@
 const mongoose = require('mongoose')
 
-const QuestionItemSchema = new mongoose.Schema({
-	type: {
-		type: String,
-		required: true,
-	},
-	content: {
-		type: mongoose.Schema.Types.Mixed,
-		required: true,
-	},
-	score: {
-		type: Number,
-	},
-	label: {
-		type: String,
-		required: true,
-	},
-	question: {
-		type: String,
-	},
-})
-
-const QuestionSchema = new mongoose.Schema(
+const QuestionSetSchema = new mongoose.Schema(
 	{
 		id: {
 			type: Number,
@@ -73,14 +52,18 @@ const QuestionSchema = new mongoose.Schema(
 			type: Boolean,
 			default: false,
 		},
+		canRandomOrder: {
+			type: Boolean,
+			default: false,
+		},
 		publishedAt: {
 			type: Date,
 		},
 		contents: {
-			type: [QuestionItemSchema],
+			type: [Number],
 		},
 	},
 	{ timestamps: true }
 )
 
-module.exports = mongoose.model('Question', QuestionSchema)
+module.exports = mongoose.model('QuestionSet', QuestionSetSchema)

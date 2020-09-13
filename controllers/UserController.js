@@ -26,13 +26,8 @@ exports.show = (req, res) => {
 	if (req.method === 'GET') {
 		id = req.params.id
 	} else if (req.method === 'POST') {
-		console.log('here')
 		id = req.body.id
 	}
-
-	console.log('asking for user ID')
-	console.log(req.method)
-	console.log(id)
 
 	// If still not updated
 	if (!id) return res.status(403).json({ errors: 'Request forbidden' })

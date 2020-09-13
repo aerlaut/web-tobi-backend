@@ -29,12 +29,9 @@ exports.store = (req, res) => {
 		const _id = await File.findOne({ path: newPath }, '_id').exec()
 
 		if (_id === null) {
-			console.log('new object')
-
 			file.id = await counter.getNewId('File')
 			return file.save()
 		} else {
-			console.log('old file')
 			return File.findByIdAndUpdate(
 				_id,
 				{
@@ -51,9 +48,6 @@ exports.store = (req, res) => {
 
 	create()
 		.then((doc) => {
-			console.log('test')
-			console.log(doc)
-
 			return res.json({
 				status: 'ok',
 				message: 'Resource created',
