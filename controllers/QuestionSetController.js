@@ -1,4 +1,5 @@
-const Question = require('../models/Question')
+const QuestionSet = require('../models/QuestionSet')
+const Topic = require('../models/Topic')
 const Counter = require('../models/Counter')
 const { create } = require('../models/Counter')
 
@@ -13,6 +14,21 @@ exports.index = (req, res) => {
 			status: 'ok',
 			message: 'Question set fetched',
 			data: docs,
+		})
+	})
+}
+
+exports.create = (req, res) => {
+	// Get topics
+	Topic.find((err, docs) => {
+		if (err) {
+			return res.status(500).json(err)
+		}
+
+		return res.json({
+			status: 'ok',
+			message: 'Topics fetched',
+			data: { topics: docs },
 		})
 	})
 }

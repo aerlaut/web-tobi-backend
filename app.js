@@ -14,6 +14,7 @@ const DashboardRouter = require('./routes/dashboard')
 const QuestionRouter = require('./routes/question')
 const FileRouter = require('./routes/file')
 const TopicRouter = require('./routes/topic')
+const QuestionSetRouter = require('./routes/question_set')
 
 // Initialize app
 const app = express()
