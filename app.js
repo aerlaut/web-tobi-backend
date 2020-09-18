@@ -39,6 +39,7 @@ app.use('/api/dashboard', DashboardRouter)
 app.use('/api/question', QuestionRouter)
 app.use('/api/file', FileRouter)
 app.use('/api/topic', TopicRouter)
+app.use('/api/question_set', QuestionSetRouter)
 
 app.listen(process.env.APP_PORT, () => {
 	console.log(DBURI)
