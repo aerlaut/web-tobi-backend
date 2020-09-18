@@ -61,8 +61,6 @@ exports.store = (req, res) => {
 		// Payload
 		let payload = req.body
 		payload.id = await counter.getNewId('User')
-		payload.createdAt = Date.now()
-		payload.updatedAt = Date.now()
 		payload.password = bcrypt.hashSync(req.body.password, 10)
 
 		let user = new User(payload)

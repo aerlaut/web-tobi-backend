@@ -13,6 +13,7 @@ const AuthRouter = require('./routes/auth')
 const DashboardRouter = require('./routes/dashboard')
 const QuestionRouter = require('./routes/question')
 const FileRouter = require('./routes/file')
+const TopicRouter = require('./routes/topic')
 
 // Initialize app
 const app = express()
@@ -37,7 +38,7 @@ app.use('/api/user', UserRouter)
 app.use('/api/dashboard', DashboardRouter)
 app.use('/api/question', QuestionRouter)
 app.use('/api/file', FileRouter)
-app.use('/api/topics', TopicsRouter)
+app.use('/api/topic', TopicRouter)
 
 app.listen(process.env.APP_PORT, () => {
 	console.log(DBURI)
