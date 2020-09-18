@@ -14,9 +14,19 @@ const QuestionItemSchema = new mongoose.Schema({
 	},
 	label: {
 		type: String,
-		required: true,
 	},
 	question: {
+		type: String,
+	},
+})
+
+const TopicItemSchema = new mongoose.Schema({
+	name: {
+		type: String,
+		required: true,
+		index: true,
+	},
+	type: {
 		type: String,
 	},
 })
@@ -41,25 +51,29 @@ const QuestionSchema = new mongoose.Schema(
 		description: {
 			type: String,
 			required: true,
+			text: true,
 		},
 		difficulty: {
 			type: Number,
 			default: 3,
 			min: 1,
 			max: 5,
+			index: true,
 		},
 		numTries: {
 			type: Number,
 			default: 0,
 		},
 		topics: {
-			type: [mongoose.Schema.Types.ObjectId],
+			type: [TopicItemSchema],
 		},
 		subtopics: {
-			type: [mongoose.Schema.Types.ObjectId],
+			type: [TopicItemSchema],
 		},
 		tier: {
 			type: String,
+			default: 'osk',
+			index: true,
 		},
 		isOfficial: {
 			type: Boolean,

@@ -2,6 +2,7 @@ const Question = require('../models/Question')
 const Topic = require('../models/Topic')
 const Counter = require('../models/Counter')
 const { create } = require('../models/Counter')
+const { removeStopwords } = require('../helpers/stopwords')
 
 // Get list of all questions
 exports.index = (req, res) => {
@@ -87,6 +88,74 @@ exports.show = (req, res) => {
 			status: 'ok',
 			message: 'Question fetched',
 			data: doc,
+		})
+	})
+}
+
+// Search questions with parameter
+exports.search = (req, res) => {
+	const { minDifficulty, maxDifficulty } = req.body
+
+	let { questionDescription, tiers, topics, subtopics } = req.body
+
+	// Process search on description to filter commmon words
+	questionDescription = removeStopwords(questionDescription)
+
+	// Process variables for easier querying
+	tiers = tiers.map((el) => el.value)
+	topics = topics.map((el) => el.name)
+	subtopics = subtopics.map((el) => el.name)
+
+	Question.find(
+		{
+			$text: { $search: questionDescription },
+			difficulty: { $gte: minDifficulty, $lte: maxDifficulty },
+			tier: { $in: tiers },
+			'subtopics.name': { $in: subtopics },
+			'topics.name': { $in: topics },
+			isPublished: true,
+		},
+		{
+			id: 1,
+			description: 1,
+			difficulty: 1,
+			tier: 1,
+			topics: 1,
+			subtopics: 1,
+			num_tries: 1,
+		},
+		(err, doc) => {
+			if (err) return res.status(500).json(err)
+
+			return res.json({
+				status: 'ok',
+				message: 'Questions fetched',
+				data: doc,
+			})
+		}
+	)
+}
+
+// Get data for edit
+exports.edit = (req, res) => {
+	const { id } = req.params
+
+	Question.findOne({ id: id }, (err, doc) => {
+		if (err) return res.status(500).json(err)
+
+		let data = { question: doc }
+
+		// Add topics
+		Topic.find((err, docs) => {
+			if (err) return res.status(500).json(err)
+
+			data.topics = docs
+
+			return res.json({
+				status: 'ok',
+				message: 'Question fetched',
+				data: data,
+			})
 		})
 	})
 }

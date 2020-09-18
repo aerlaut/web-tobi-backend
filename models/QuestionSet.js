@@ -20,6 +20,7 @@ const QuestionSetSchema = new mongoose.Schema(
 		description: {
 			type: String,
 			required: true,
+			text: true,
 		},
 		difficulty: {
 			type: Number,
@@ -33,9 +34,11 @@ const QuestionSetSchema = new mongoose.Schema(
 		},
 		topics: {
 			type: [mongoose.Schema.Types.ObjectId],
+			index: true,
 		},
 		subtopics: {
 			type: [mongoose.Schema.Types.ObjectId],
+			index: true,
 		},
 		tier: {
 			type: String,
