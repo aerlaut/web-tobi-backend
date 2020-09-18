@@ -8,6 +8,7 @@ const QuestionController = require('../controllers/QuestionController')
 
 // Question page routes
 router.get('/', jwtAuth, QuestionController.index)
+router.get('/create', jwtAuth, QuestionController.create)
 router.post('/create', jwtAuth, QuestionController.store)
 router.get('/:id', jwtAuth, QuestionController.show)
 router.get('/:id/edit', jwtAuth, QuestionController.show)
