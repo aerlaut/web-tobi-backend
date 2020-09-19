@@ -3,6 +3,7 @@ const Topic = require('../models/Topic')
 const Counter = require('../models/Counter')
 const { create } = require('../models/Counter')
 const { removeStopwords } = require('../helpers/stopwords')
+const { query } = require('express')
 
 // Get list of all questions
 exports.index = (req, res) => {
@@ -95,26 +96,42 @@ exports.show = (req, res) => {
 // Search questions with parameter
 exports.search = (req, res) => {
 	const { minDifficulty, maxDifficulty } = req.body
-
 	let { questionDescription, tiers, topics, subtopics } = req.body
 
-	// Process search on description to filter commmon words
-	questionDescription = removeStopwords(questionDescription)
+	let queryObject = { isPublished: true }
 
-	// Process variables for easier querying
-	tiers = tiers.map((el) => el.value)
-	topics = topics.map((el) => el.name)
-	subtopics = subtopics.map((el) => el.name)
+	// Filter input
+	if (minDifficulty < 1) {
+		minDifficulty = 1
+	}
+	if (maxDifficulty > 5) {
+		maxDifficulty = 5
+	}
+
+	queryObject.difficulty = { $gte: minDifficulty, $lte: maxDifficulty }
+
+	if (topics.length > 0) {
+		topics = topics.map((el) => el.name)
+		queryObject['topics.name'] = { $in: topics }
+	}
+
+	if (subtopics.length > 0) {
+		subtopics = subtopics.map((el) => el.name)
+		queryObject['subtopics.name'] = { $in: subtopics }
+	}
+
+	if (tiers.length > 0) {
+		tiers = tiers.map((el) => el.value)
+		queryObject.tiers = { $in: tiers }
+	}
+
+	// Process search on description to filter commmon words
+	if (questionDescription != '') {
+		queryObject.questionDescription = removeStopwords(questionDescription)
+	}
 
 	Question.find(
-		{
-			$text: { $search: questionDescription },
-			difficulty: { $gte: minDifficulty, $lte: maxDifficulty },
-			tier: { $in: tiers },
-			'subtopics.name': { $in: subtopics },
-			'topics.name': { $in: topics },
-			isPublished: true,
-		},
+		queryObject,
 		{
 			id: 1,
 			description: 1,
