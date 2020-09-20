@@ -16,6 +16,17 @@ const QuestionSetItemSchema = new mongoose.Schema({
 	},
 })
 
+const TopicItemSchema = new mongoose.Schema({
+	name: {
+		type: String,
+		required: true,
+		index: true,
+	},
+	type: {
+		type: String,
+	},
+})
+
 const QuestionSetSchema = new mongoose.Schema(
 	{
 		id: {
@@ -49,11 +60,7 @@ const QuestionSetSchema = new mongoose.Schema(
 			default: 0,
 		},
 		topics: {
-			type: [mongoose.Schema.Types.ObjectId],
-			index: true,
-		},
-		subtopics: {
-			type: [mongoose.Schema.Types.ObjectId],
+			type: [TopicItemSchema],
 			index: true,
 		},
 		tier: {
