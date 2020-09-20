@@ -63,6 +63,10 @@ const QuestionSetSchema = new mongoose.Schema(
 			type: [TopicItemSchema],
 			index: true,
 		},
+		subtopics: {
+			type: [TopicItemSchema],
+			index: true,
+		},
 		tier: {
 			type: String,
 		},
