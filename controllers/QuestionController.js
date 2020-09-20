@@ -2,9 +2,7 @@ const Question = require('../models/Question')
 const QuestionSet = require('../models/QuestionSet')
 const Topic = require('../models/Topic')
 const Counter = require('../models/Counter')
-const { create } = require('../models/Counter')
 const { removeStopwords } = require('../helpers/stopwords')
-const { query } = require('express')
 
 // Get list of all questions
 exports.index = (req, res) => {
@@ -189,8 +187,6 @@ exports.search = (req, res) => {
 		{},
 		(err, docs) => {
 			if (err) return res.status(500).json(err)
-
-			console.log(docs)
 
 			return res.json({
 				status: 'ok',

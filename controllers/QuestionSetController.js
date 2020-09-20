@@ -1,7 +1,7 @@
 const QuestionSet = require('../models/QuestionSet')
 const Topic = require('../models/Topic')
 const Counter = require('../models/Counter')
-const { create } = require('../models/Counter')
+const { removeStopwords } = require('../helpers/stopwords')
 
 // Get list of all questions
 exports.index = (req, res) => {
@@ -109,6 +109,77 @@ exports.edit = (req, res) => {
 			})
 		})
 	})
+}
+
+// Search questions with parameter
+exports.search = (req, res) => {
+	let {
+		minDifficulty,
+		maxDifficulty,
+		description,
+		tiers,
+		topics,
+		subtopics,
+	} = req.body
+
+	let queryObject = { isPublished: true }
+
+	// Filter input
+	if (minDifficulty === undefined || minDifficulty < 1) {
+		minDifficulty = 1
+	}
+
+	if (maxDifficulty === undefined || maxDifficulty > 5) {
+		maxDifficulty = 5
+	}
+
+	queryObject.difficulty = { $gte: minDifficulty, $lte: maxDifficulty }
+
+	if (topics !== undefined && topics.length > 0) {
+		topics = topics.map((el) => el.name)
+		queryObject['topics.name'] = { $in: topics }
+	}
+
+	if (subtopics !== undefined && subtopics.length > 0) {
+		subtopics = subtopics.map((el) => el.name)
+		queryObject['subtopics.name'] = { $in: subtopics }
+	}
+
+	if (tiers !== undefined && tiers.length > 0) {
+		tiers = tiers.map((el) => el.value)
+		queryObject.tiers = { $in: tiers }
+	}
+
+	// Process search on description to filter commmon words
+	if (description !== undefined && description != '') {
+		queryObject.$text = {
+			$search: removeStopwords(description),
+		}
+	}
+
+	QuestionSet.find(
+		queryObject,
+		{
+			id: 1,
+			description: 1,
+			difficulty: 1,
+			tier: 1,
+			topics: 1,
+			subtopics: 1,
+			numTries: 1,
+			maxScore: 1,
+		},
+		{},
+		(err, docs) => {
+			if (err) return res.status(500).json(err)
+
+			return res.json({
+				status: 'ok',
+				message: 'Questions fetched',
+				data: docs,
+			})
+		}
+	)
 }
 
 // Update question

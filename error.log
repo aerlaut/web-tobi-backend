@@ -576,3 +576,58 @@ null
 null
 (node:9159) DeprecationWarning: current Server Discovery and Monitoring engine is deprecated, and will be removed in a future version. To use the new Server Discover and Monitoring engine, pass option { useUnifiedTopology: true } to the MongoClient constructor.
 null
+null
+(node:9227) DeprecationWarning: current Server Discovery and Monitoring engine is deprecated, and will be removed in a future version. To use the new Server Discover and Monitoring engine, pass option { useUnifiedTopology: true } to the MongoClient constructor.
+null
+null
+null
+(node:9331) DeprecationWarning: current Server Discovery and Monitoring engine is deprecated, and will be removed in a future version. To use the new Server Discover and Monitoring engine, pass option { useUnifiedTopology: true } to the MongoClient constructor.
+null
+null
+(node:9349) DeprecationWarning: current Server Discovery and Monitoring engine is deprecated, and will be removed in a future version. To use the new Server Discover and Monitoring engine, pass option { useUnifiedTopology: true } to the MongoClient constructor.
+null
+null
+null
+(node:9473) DeprecationWarning: current Server Discovery and Monitoring engine is deprecated, and will be removed in a future version. To use the new Server Discover and Monitoring engine, pass option { useUnifiedTopology: true } to the MongoClient constructor.
+(node:9486) DeprecationWarning: current Server Discovery and Monitoring engine is deprecated, and will be removed in a future version. To use the new Server Discover and Monitoring engine, pass option { useUnifiedTopology: true } to the MongoClient constructor.
+(node:9499) DeprecationWarning: current Server Discovery and Monitoring engine is deprecated, and will be removed in a future version. To use the new Server Discover and Monitoring engine, pass option { useUnifiedTopology: true } to the MongoClient constructor.
+null
+null
+ReferenceError: removeStopwords is not defined
+    at exports.search (/Users/aerlaut/Documents/Projects/web-tobi-backend/controllers/QuestionSetController.js:156:13)
+    at Layer.handle [as handle_request] (/Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/express/lib/router/route.js:137:13)
+    at jwt.verify (/Users/aerlaut/Documents/Projects/web-tobi-backend/middleware/auth.js:12:3)
+    at /Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/jsonwebtoken/verify.js:223:12
+    at getSecret (/Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/jsonwebtoken/verify.js:90:14)
+    at Object.module.exports [as verify] (/Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/jsonwebtoken/verify.js:94:10)
+    at authenticateToken (/Users/aerlaut/Documents/Projects/web-tobi-backend/middleware/auth.js:8:6)
+    at Layer.handle [as handle_request] (/Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/express/lib/router/index.js:275:10)
+    at Function.handle (/Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/express/lib/router/index.js:174:3)
+(node:9521) DeprecationWarning: current Server Discovery and Monitoring engine is deprecated, and will be removed in a future version. To use the new Server Discover and Monitoring engine, pass option { useUnifiedTopology: true } to the MongoClient constructor.
+(node:9536) DeprecationWarning: current Server Discovery and Monitoring engine is deprecated, and will be removed in a future version. To use the new Server Discover and Monitoring engine, pass option { useUnifiedTopology: true } to the MongoClient constructor.
+null
+null
+null
+null
+null
+null
+null
+(node:9651) DeprecationWarning: current Server Discovery and Monitoring engine is deprecated, and will be removed in a future version. To use the new Server Discover and Monitoring engine, pass option { useUnifiedTopology: true } to the MongoClient constructor.
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
