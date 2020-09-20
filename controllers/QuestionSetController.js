@@ -86,16 +86,41 @@ exports.show = (req, res) => {
 	})
 }
 
+// Get data for edit
+exports.edit = (req, res) => {
+	const { id } = req.params
+
+	const data = {}
+
+	QuestionSet.findOne({ id: id }, (err, doc) => {
+		if (err) return res.status(500).json(err)
+
+		data.questionSet = doc
+
+		Topic.find((err, docs) => {
+			if (err) return res.status(500).json(err)
+
+			data.topics = docs
+
+			return res.json({
+				status: 'ok',
+				message: 'QuestionSet fetched',
+				data: data,
+			})
+		})
+	})
+}
+
 // Update question
 exports.update = (req, res) => {
 	const { id } = req.params
 
-	Question.findByIdAndUpdate(req.body._id, req.body, (err, doc) => {
+	QuestionSet.findByIdAndUpdate(req.body._id, req.body, (err, doc) => {
 		if (err) return res.status(500).json(err)
 
 		return res.json({
 			status: 'ok',
-			message: `Question ${id} updated`,
+			message: `Question set ${id} updated`,
 		})
 	})
 }

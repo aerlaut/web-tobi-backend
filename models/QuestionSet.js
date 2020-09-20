@@ -8,6 +8,9 @@ const QuestionSetItemSchema = new mongoose.Schema({
 	difficulty: {
 		type: Number,
 	},
+	maxScore: {
+		type: Number,
+	},
 	topic: {
 		type: String,
 	},
