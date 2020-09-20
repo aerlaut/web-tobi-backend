@@ -1,4 +1,4 @@
-(node:3356) DeprecationWarning: current Server Discovery and Monitoring engine is deprecated, and will be removed in a future version. To use the new Server Discover and Monitoring engine, pass option { useUnifiedTopology: true } to the MongoClient constructor.
+(node:723) DeprecationWarning: current Server Discovery and Monitoring engine is deprecated, and will be removed in a future version. To use the new Server Discover and Monitoring engine, pass option { useUnifiedTopology: true } to the MongoClient constructor.
 null
 null
 null
@@ -7,11 +7,131 @@ null
 null
 null
 null
-/Users/aerlaut/Documents/Projects/web-tobi-backend/controllers/QuestionController.js:121
-	let queryObject = {
-	    ^
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+(node:1666) DeprecationWarning: current Server Discovery and Monitoring engine is deprecated, and will be removed in a future version. To use the new Server Discover and Monitoring engine, pass option { useUnifiedTopology: true } to the MongoClient constructor.
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+(node:2140) DeprecationWarning: current Server Discovery and Monitoring engine is deprecated, and will be removed in a future version. To use the new Server Discover and Monitoring engine, pass option { useUnifiedTopology: true } to the MongoClient constructor.
+(node:2153) DeprecationWarning: current Server Discovery and Monitoring engine is deprecated, and will be removed in a future version. To use the new Server Discover and Monitoring engine, pass option { useUnifiedTopology: true } to the MongoClient constructor.
+null
+null
+(node:2382) DeprecationWarning: current Server Discovery and Monitoring engine is deprecated, and will be removed in a future version. To use the new Server Discover and Monitoring engine, pass option { useUnifiedTopology: true } to the MongoClient constructor.
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+(node:2837) DeprecationWarning: current Server Discovery and Monitoring engine is deprecated, and will be removed in a future version. To use the new Server Discover and Monitoring engine, pass option { useUnifiedTopology: true } to the MongoClient constructor.
+(node:2851) DeprecationWarning: current Server Discovery and Monitoring engine is deprecated, and will be removed in a future version. To use the new Server Discover and Monitoring engine, pass option { useUnifiedTopology: true } to the MongoClient constructor.
+null
+events.js:174
+      throw er; // Unhandled 'error' event
+      ^
 
-SyntaxError: Identifier 'queryObject' has already been declared
+ReferenceError: QuestSet is not defined
+    at /Users/aerlaut/Documents/Projects/web-tobi-backend/controllers/QuestionController.js:20:3
+    at /Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/mongoose/lib/model.js:4834:16
+    at /Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/mongoose/lib/model.js:4834:16
+    at /Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/mongoose/lib/helpers/promiseOrCallback.js:24:16
+    at /Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/mongoose/lib/model.js:4857:21
+    at _hooks.execPost (/Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/mongoose/lib/query.js:4390:11)
+    at /Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/kareem/index.js:135:16
+    at process._tickCallback (internal/process/next_tick.js:61:11)
+Emitted 'error' event at:
+    at /Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/mongoose/lib/model.js:4836:13
+    at /Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/mongoose/lib/helpers/promiseOrCallback.js:24:16
+    [... lines matching original stack trace ...]
+    at process._tickCallback (internal/process/next_tick.js:61:11)
+(node:2874) DeprecationWarning: current Server Discovery and Monitoring engine is deprecated, and will be removed in a future version. To use the new Server Discover and Monitoring engine, pass option { useUnifiedTopology: true } to the MongoClient constructor.
+null
+events.js:174
+      throw er; // Unhandled 'error' event
+      ^
+
+TypeError: res.json is not a function
+    at QuestionSet.find (/Users/aerlaut/Documents/Projects/web-tobi-backend/controllers/QuestionController.js:27:15)
+    at /Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/mongoose/lib/model.js:4834:16
+    at /Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/mongoose/lib/model.js:4834:16
+    at /Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/mongoose/lib/helpers/promiseOrCallback.js:24:16
+    at /Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/mongoose/lib/model.js:4857:21
+    at _hooks.execPost (/Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/mongoose/lib/query.js:4390:11)
+    at /Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/kareem/index.js:135:16
+    at process._tickCallback (internal/process/next_tick.js:61:11)
+Emitted 'error' event at:
+    at /Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/mongoose/lib/model.js:4836:13
+    at /Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/mongoose/lib/helpers/promiseOrCallback.js:24:16
+    [... lines matching original stack trace ...]
+    at process._tickCallback (internal/process/next_tick.js:61:11)
+(node:2925) DeprecationWarning: current Server Discovery and Monitoring engine is deprecated, and will be removed in a future version. To use the new Server Discover and Monitoring engine, pass option { useUnifiedTopology: true } to the MongoClient constructor.
+null
+/Users/aerlaut/Documents/Projects/web-tobi-backend/controllers/QuestionController.js:19
+  (err, docs) {
+            ^
+
+SyntaxError: missing ) after argument list
     at Module._compile (internal/modules/cjs/loader.js:723:23)
     at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
     at Module.load (internal/modules/cjs/loader.js:653:32)
@@ -28,137 +148,22 @@ SyntaxError: Identifier 'queryObject' has already been declared
     at Module.require (internal/modules/cjs/loader.js:692:17)
     at require (internal/modules/cjs/helpers.js:25:18)
     at Object.<anonymous> (/Users/aerlaut/Documents/Projects/web-tobi-backend/app.js:14:24)
-/Users/aerlaut/Documents/Projects/web-tobi-backend/controllers/QuestionController.js:123
-    $text: { $search: questionDescription },
-                                           ^
-
-SyntaxError: Unexpected token ,
-    at Module._compile (internal/modules/cjs/loader.js:723:23)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
-    at Module.load (internal/modules/cjs/loader.js:653:32)
-    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
-    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
-    at Module.require (internal/modules/cjs/loader.js:692:17)
-    at require (internal/modules/cjs/helpers.js:25:18)
-    at Object.<anonymous> (/Users/aerlaut/Documents/Projects/web-tobi-backend/routes/question.js:7:28)
-    at Module._compile (internal/modules/cjs/loader.js:778:30)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
-    at Module.load (internal/modules/cjs/loader.js:653:32)
-    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
-    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
-    at Module.require (internal/modules/cjs/loader.js:692:17)
-    at require (internal/modules/cjs/helpers.js:25:18)
-    at Object.<anonymous> (/Users/aerlaut/Documents/Projects/web-tobi-backend/app.js:14:24)
-/Users/aerlaut/Documents/Projects/web-tobi-backend/controllers/QuestionController.js:124
-    $text: { $search: questionDescription },
-                                           ^
-
-SyntaxError: Unexpected token ,
-    at Module._compile (internal/modules/cjs/loader.js:723:23)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
-    at Module.load (internal/modules/cjs/loader.js:653:32)
-    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
-    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
-    at Module.require (internal/modules/cjs/loader.js:692:17)
-    at require (internal/modules/cjs/helpers.js:25:18)
-    at Object.<anonymous> (/Users/aerlaut/Documents/Projects/web-tobi-backend/routes/question.js:7:28)
-    at Module._compile (internal/modules/cjs/loader.js:778:30)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
-    at Module.load (internal/modules/cjs/loader.js:653:32)
-    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
-    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
-    at Module.require (internal/modules/cjs/loader.js:692:17)
-    at require (internal/modules/cjs/helpers.js:25:18)
-    at Object.<anonymous> (/Users/aerlaut/Documents/Projects/web-tobi-backend/app.js:14:24)
-/Users/aerlaut/Documents/Projects/web-tobi-backend/controllers/QuestionController.js:129
-    $text: { $search: questionDescription },
-                                           ^
-
-SyntaxError: Unexpected token ,
-    at Module._compile (internal/modules/cjs/loader.js:723:23)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
-    at Module.load (internal/modules/cjs/loader.js:653:32)
-    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
-    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
-    at Module.require (internal/modules/cjs/loader.js:692:17)
-    at require (internal/modules/cjs/helpers.js:25:18)
-    at Object.<anonymous> (/Users/aerlaut/Documents/Projects/web-tobi-backend/routes/question.js:7:28)
-    at Module._compile (internal/modules/cjs/loader.js:778:30)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
-    at Module.load (internal/modules/cjs/loader.js:653:32)
-    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
-    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
-    at Module.require (internal/modules/cjs/loader.js:692:17)
-    at require (internal/modules/cjs/helpers.js:25:18)
-    at Object.<anonymous> (/Users/aerlaut/Documents/Projects/web-tobi-backend/app.js:14:24)
-/Users/aerlaut/Documents/Projects/web-tobi-backend/controllers/QuestionController.js:132
-    $text: { $search: questionDescription },
-                                           ^
-
-SyntaxError: Unexpected token ,
-    at Module._compile (internal/modules/cjs/loader.js:723:23)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
-    at Module.load (internal/modules/cjs/loader.js:653:32)
-    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
-    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
-    at Module.require (internal/modules/cjs/loader.js:692:17)
-    at require (internal/modules/cjs/helpers.js:25:18)
-    at Object.<anonymous> (/Users/aerlaut/Documents/Projects/web-tobi-backend/routes/question.js:7:28)
-    at Module._compile (internal/modules/cjs/loader.js:778:30)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
-    at Module.load (internal/modules/cjs/loader.js:653:32)
-    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
-    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
-    at Module.require (internal/modules/cjs/loader.js:692:17)
-    at require (internal/modules/cjs/helpers.js:25:18)
-    at Object.<anonymous> (/Users/aerlaut/Documents/Projects/web-tobi-backend/app.js:14:24)
-/Users/aerlaut/Documents/Projects/web-tobi-backend/controllers/QuestionController.js:132
-    $text: { $search: questionDescription },
-                                           ^
-
-SyntaxError: Unexpected token ,
-    at Module._compile (internal/modules/cjs/loader.js:723:23)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
-    at Module.load (internal/modules/cjs/loader.js:653:32)
-    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
-    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
-    at Module.require (internal/modules/cjs/loader.js:692:17)
-    at require (internal/modules/cjs/helpers.js:25:18)
-    at Object.<anonymous> (/Users/aerlaut/Documents/Projects/web-tobi-backend/routes/question.js:7:28)
-    at Module._compile (internal/modules/cjs/loader.js:778:30)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
-    at Module.load (internal/modules/cjs/loader.js:653:32)
-    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
-    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
-    at Module.require (internal/modules/cjs/loader.js:692:17)
-    at require (internal/modules/cjs/helpers.js:25:18)
-    at Object.<anonymous> (/Users/aerlaut/Documents/Projects/web-tobi-backend/app.js:14:24)
-/Users/aerlaut/Documents/Projects/web-tobi-backend/controllers/QuestionController.js:131
-    $text: { $search: questionDescription },
-                                           ^
-
-SyntaxError: Unexpected token ,
-    at Module._compile (internal/modules/cjs/loader.js:723:23)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
-    at Module.load (internal/modules/cjs/loader.js:653:32)
-    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
-    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
-    at Module.require (internal/modules/cjs/loader.js:692:17)
-    at require (internal/modules/cjs/helpers.js:25:18)
-    at Object.<anonymous> (/Users/aerlaut/Documents/Projects/web-tobi-backend/routes/question.js:7:28)
-    at Module._compile (internal/modules/cjs/loader.js:778:30)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
-    at Module.load (internal/modules/cjs/loader.js:653:32)
-    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
-    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
-    at Module.require (internal/modules/cjs/loader.js:692:17)
-    at require (internal/modules/cjs/helpers.js:25:18)
-    at Object.<anonymous> (/Users/aerlaut/Documents/Projects/web-tobi-backend/app.js:14:24)
-(node:3748) DeprecationWarning: current Server Discovery and Monitoring engine is deprecated, and will be removed in a future version. To use the new Server Discover and Monitoring engine, pass option { useUnifiedTopology: true } to the MongoClient constructor.
+(node:2951) DeprecationWarning: current Server Discovery and Monitoring engine is deprecated, and will be removed in a future version. To use the new Server Discover and Monitoring engine, pass option { useUnifiedTopology: true } to the MongoClient constructor.
 null
 null
-TypeError: Cannot read property 'length' of undefined
-    at exports.search (/Users/aerlaut/Documents/Projects/web-tobi-backend/controllers/QuestionController.js:113:13)
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+ReferenceError: Question is not defined
+    at exports.show (/Users/aerlaut/Documents/Projects/web-tobi-backend/controllers/QuestionSetController.js:78:2)
     at Layer.handle [as handle_request] (/Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/express/lib/router/layer.js:95:5)
     at next (/Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/express/lib/router/route.js:137:13)
     at jwt.verify (/Users/aerlaut/Documents/Projects/web-tobi-backend/middleware/auth.js:12:3)
@@ -171,16 +176,13 @@ TypeError: Cannot read property 'length' of undefined
     at Route.dispatch (/Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/express/lib/router/route.js:112:3)
     at Layer.handle [as handle_request] (/Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/express/lib/router/layer.js:95:5)
     at /Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/express/lib/router/index.js:281:22
-    at Function.process_params (/Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/express/lib/router/index.js:335:12)
-    at next (/Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/express/lib/router/index.js:275:10)
-    at Function.handle (/Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/express/lib/router/index.js:174:3)
-(node:3825) DeprecationWarning: current Server Discovery and Monitoring engine is deprecated, and will be removed in a future version. To use the new Server Discover and Monitoring engine, pass option { useUnifiedTopology: true } to the MongoClient constructor.
+    at param (/Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/express/lib/router/index.js:354:14)
+    at param (/Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/express/lib/router/index.js:365:14)
+    at Function.process_params (/Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/express/lib/router/index.js:410:3)
 null
 null
-null
-null
-ReferenceError: queryObj is not defined
-    at exports.search (/Users/aerlaut/Documents/Projects/web-tobi-backend/controllers/QuestionController.js:134:3)
+ReferenceError: Question is not defined
+    at exports.show (/Users/aerlaut/Documents/Projects/web-tobi-backend/controllers/QuestionSetController.js:78:2)
     at Layer.handle [as handle_request] (/Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/express/lib/router/layer.js:95:5)
     at next (/Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/express/lib/router/route.js:137:13)
     at jwt.verify (/Users/aerlaut/Documents/Projects/web-tobi-backend/middleware/auth.js:12:3)
@@ -193,8 +195,35 @@ ReferenceError: queryObj is not defined
     at Route.dispatch (/Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/express/lib/router/route.js:112:3)
     at Layer.handle [as handle_request] (/Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/express/lib/router/layer.js:95:5)
     at /Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/express/lib/router/index.js:281:22
-    at Function.process_params (/Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/express/lib/router/index.js:335:12)
-    at next (/Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/express/lib/router/index.js:275:10)
-    at Function.handle (/Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/express/lib/router/index.js:174:3)
-(node:3888) DeprecationWarning: current Server Discovery and Monitoring engine is deprecated, and will be removed in a future version. To use the new Server Discover and Monitoring engine, pass option { useUnifiedTopology: true } to the MongoClient constructor.
+    at param (/Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/express/lib/router/index.js:354:14)
+    at param (/Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/express/lib/router/index.js:365:14)
+    at Function.process_params (/Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/express/lib/router/index.js:410:3)
+(node:3808) DeprecationWarning: current Server Discovery and Monitoring engine is deprecated, and will be removed in a future version. To use the new Server Discover and Monitoring engine, pass option { useUnifiedTopology: true } to the MongoClient constructor.
+(node:3813) DeprecationWarning: current Server Discovery and Monitoring engine is deprecated, and will be removed in a future version. To use the new Server Discover and Monitoring engine, pass option { useUnifiedTopology: true } to the MongoClient constructor.
+null
+null
+null
+null
+(node:4262) DeprecationWarning: current Server Discovery and Monitoring engine is deprecated, and will be removed in a future version. To use the new Server Discover and Monitoring engine, pass option { useUnifiedTopology: true } to the MongoClient constructor.
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+(node:4429) DeprecationWarning: current Server Discovery and Monitoring engine is deprecated, and will be removed in a future version. To use the new Server Discover and Monitoring engine, pass option { useUnifiedTopology: true } to the MongoClient constructor.
+null
+null
+null
+null
+null
+null
+null
 null

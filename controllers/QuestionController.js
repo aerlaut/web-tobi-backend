@@ -1,4 +1,5 @@
 const Question = require('../models/Question')
+const QuestionSet = require('../models/QuestionSet')
 const Topic = require('../models/Topic')
 const Counter = require('../models/Counter')
 const { create } = require('../models/Counter')
@@ -7,17 +8,51 @@ const { query } = require('express')
 
 // Get list of all questions
 exports.index = (req, res) => {
-	Question.find({}, function (err, docs) {
-		if (err) {
-			return res.status(500).json(err)
-		}
+	Question.find(
+		{},
+		{
+			id: 1,
+			difficulty: 1,
+			description: 1,
+			topics: 1,
+			subtopics: 1,
+			tiers: 1,
+		},
+		(err, docs) => {
+			if (err) {
+				return res.status(500).json(err)
+			}
 
-		return res.json({
-			status: 'ok',
-			message: 'Question fetched',
-			data: docs,
-		})
-	})
+			const data = {
+				questions: docs,
+			}
+
+			QuestionSet.find(
+				{},
+				{
+					id: 1,
+					difficulty: 1,
+					description: 1,
+					topics: 1,
+					subtopics: 1,
+					tiers: 1,
+				},
+				(err, docs) => {
+					if (err) {
+						return res.status(500).json(err)
+					}
+
+					data.question_sets = docs
+
+					return res.json({
+						status: 'ok',
+						message: 'Questions fetched',
+						data: data,
+					})
+				}
+			)
+		}
+	)
 }
 
 // Get data for create page
@@ -139,7 +174,8 @@ exports.search = (req, res) => {
 			tier: 1,
 			topics: 1,
 			subtopics: 1,
-			num_tries: 1,
+			numTries: 1,
+			maxScore: 1,
 		},
 		(err, doc) => {
 			if (err) return res.status(500).json(err)

@@ -1,5 +1,18 @@
 const mongoose = require('mongoose')
 
+const QuestionSetItemSchema = new mongoose.Schema({
+	id: {
+		type: Number,
+		required: true,
+	},
+	difficulty: {
+		type: Number,
+	},
+	topic: {
+		type: String,
+	},
+})
+
 const QuestionSetSchema = new mongoose.Schema(
 	{
 		id: {
@@ -63,7 +76,7 @@ const QuestionSetSchema = new mongoose.Schema(
 			type: Date,
 		},
 		contents: {
-			type: [Number],
+			type: [QuestionSetItemSchema],
 		},
 	},
 	{ timestamps: true }

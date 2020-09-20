@@ -36,19 +36,15 @@ exports.create = (req, res) => {
 // Store new question set
 exports.store = (req, res) => {
 	// Get current userId from token
-	const { _id } = req.user
 
 	async function create() {
 		let counter = new Counter()
 
 		// Create question
 		let payload = req.body
-		payload.createdBy = _id
-		payload.id = await counter.getNewId('User')
-		payload.createdAt = Date.now()
-		payload.updatedAt = Date.now()
+		payload.id = await counter.getNewId('QuestionSet')
 
-		let question = new Question(payload)
+		let question = new QuestionSet(payload)
 
 		return question.save()
 	}
@@ -79,12 +75,12 @@ exports.store = (req, res) => {
 exports.show = (req, res) => {
 	const { id } = req.params
 
-	Question.findOne({ id: id }, (err, doc) => {
+	QuestionSet.findOne({ id: id }, (err, doc) => {
 		if (err) return res.status(500).json(err)
 
 		return res.json({
 			status: 'ok',
-			message: 'Question fetched',
+			message: 'Question set fetched',
 			data: doc,
 		})
 	})

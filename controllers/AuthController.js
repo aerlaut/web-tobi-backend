@@ -51,6 +51,7 @@ exports.login = (req, res) => {
 							username: user.username,
 							role: user.role,
 							id: user.id,
+							_id: user._id,
 						},
 					})
 				} else {
