@@ -414,3 +414,165 @@ null
 null
 null
 (node:6987) DeprecationWarning: current Server Discovery and Monitoring engine is deprecated, and will be removed in a future version. To use the new Server Discover and Monitoring engine, pass option { useUnifiedTopology: true } to the MongoClient constructor.
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+(node:8185) DeprecationWarning: current Server Discovery and Monitoring engine is deprecated, and will be removed in a future version. To use the new Server Discover and Monitoring engine, pass option { useUnifiedTopology: true } to the MongoClient constructor.
+null
+SyntaxError: Unexpected token " in JSON at position 0
+    at JSON.parse (<anonymous>)
+    at createStrictSyntaxError (/Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/body-parser/lib/types/json.js:158:10)
+    at parse (/Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/body-parser/lib/types/json.js:83:15)
+    at /Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/body-parser/lib/read.js:121:18
+    at invokeCallback (/Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/raw-body/index.js:224:16)
+    at done (/Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/raw-body/index.js:213:7)
+    at IncomingMessage.onEnd (/Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/raw-body/index.js:273:7)
+    at IncomingMessage.emit (events.js:203:15)
+    at endReadableNT (_stream_readable.js:1145:12)
+    at process._tickCallback (internal/process/next_tick.js:63:19)
+null
+null
+TypeError: Cannot read property 'length' of undefined
+    at exports.search (/Users/aerlaut/Documents/Projects/web-tobi-backend/controllers/QuestionController.js:148:13)
+    at Layer.handle [as handle_request] (/Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/express/lib/router/route.js:137:13)
+    at jwt.verify (/Users/aerlaut/Documents/Projects/web-tobi-backend/middleware/auth.js:12:3)
+    at /Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/jsonwebtoken/verify.js:223:12
+    at getSecret (/Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/jsonwebtoken/verify.js:90:14)
+    at Object.module.exports [as verify] (/Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/jsonwebtoken/verify.js:94:10)
+    at authenticateToken (/Users/aerlaut/Documents/Projects/web-tobi-backend/middleware/auth.js:8:6)
+    at Layer.handle [as handle_request] (/Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/express/lib/router/index.js:275:10)
+    at Function.handle (/Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/express/lib/router/index.js:174:3)
+(node:8652) DeprecationWarning: current Server Discovery and Monitoring engine is deprecated, and will be removed in a future version. To use the new Server Discover and Monitoring engine, pass option { useUnifiedTopology: true } to the MongoClient constructor.
+(node:8667) DeprecationWarning: current Server Discovery and Monitoring engine is deprecated, and will be removed in a future version. To use the new Server Discover and Monitoring engine, pass option { useUnifiedTopology: true } to the MongoClient constructor.
+(node:8683) DeprecationWarning: current Server Discovery and Monitoring engine is deprecated, and will be removed in a future version. To use the new Server Discover and Monitoring engine, pass option { useUnifiedTopology: true } to the MongoClient constructor.
+null
+TypeError: Assignment to constant variable.
+    at exports.search (/Users/aerlaut/Documents/Projects/web-tobi-backend/controllers/QuestionController.js:140:17)
+    at Layer.handle [as handle_request] (/Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/express/lib/router/route.js:137:13)
+    at jwt.verify (/Users/aerlaut/Documents/Projects/web-tobi-backend/middleware/auth.js:12:3)
+    at /Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/jsonwebtoken/verify.js:223:12
+    at getSecret (/Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/jsonwebtoken/verify.js:90:14)
+    at Object.module.exports [as verify] (/Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/jsonwebtoken/verify.js:94:10)
+    at authenticateToken (/Users/aerlaut/Documents/Projects/web-tobi-backend/middleware/auth.js:8:6)
+    at Layer.handle [as handle_request] (/Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/express/lib/router/index.js:275:10)
+    at Function.handle (/Users/aerlaut/Documents/Projects/web-tobi-backend/node_modules/express/lib/router/index.js:174:3)
+(node:8727) DeprecationWarning: current Server Discovery and Monitoring engine is deprecated, and will be removed in a future version. To use the new Server Discover and Monitoring engine, pass option { useUnifiedTopology: true } to the MongoClient constructor.
+null
+(node:8740) DeprecationWarning: current Server Discovery and Monitoring engine is deprecated, and will be removed in a future version. To use the new Server Discover and Monitoring engine, pass option { useUnifiedTopology: true } to the MongoClient constructor.
+null
+(node:8756) DeprecationWarning: current Server Discovery and Monitoring engine is deprecated, and will be removed in a future version. To use the new Server Discover and Monitoring engine, pass option { useUnifiedTopology: true } to the MongoClient constructor.
+null
+null
+null
+null
+null
+null
+(node:8833) DeprecationWarning: current Server Discovery and Monitoring engine is deprecated, and will be removed in a future version. To use the new Server Discover and Monitoring engine, pass option { useUnifiedTopology: true } to the MongoClient constructor.
+null
+null
+null
+null
+(node:8847) DeprecationWarning: current Server Discovery and Monitoring engine is deprecated, and will be removed in a future version. To use the new Server Discover and Monitoring engine, pass option { useUnifiedTopology: true } to the MongoClient constructor.
+null
+/Users/aerlaut/Documents/Projects/web-tobi-backend/controllers/QuestionController.js:239
+}
+^
+
+SyntaxError: Unexpected end of input
+    at Module._compile (internal/modules/cjs/loader.js:723:23)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/Users/aerlaut/Documents/Projects/web-tobi-backend/routes/question.js:7:28)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/Users/aerlaut/Documents/Projects/web-tobi-backend/app.js:14:24)
+/Users/aerlaut/Documents/Projects/web-tobi-backend/controllers/QuestionController.js:241
+}
+^
+
+SyntaxError: Unexpected end of input
+    at Module._compile (internal/modules/cjs/loader.js:723:23)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/Users/aerlaut/Documents/Projects/web-tobi-backend/routes/question.js:7:28)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/Users/aerlaut/Documents/Projects/web-tobi-backend/app.js:14:24)
+(node:8983) DeprecationWarning: current Server Discovery and Monitoring engine is deprecated, and will be removed in a future version. To use the new Server Discover and Monitoring engine, pass option { useUnifiedTopology: true } to the MongoClient constructor.
+null
+null
+null
+null
+(node:9062) DeprecationWarning: current Server Discovery and Monitoring engine is deprecated, and will be removed in a future version. To use the new Server Discover and Monitoring engine, pass option { useUnifiedTopology: true } to the MongoClient constructor.
+null
+(node:9159) DeprecationWarning: current Server Discovery and Monitoring engine is deprecated, and will be removed in a future version. To use the new Server Discover and Monitoring engine, pass option { useUnifiedTopology: true } to the MongoClient constructor.
+null

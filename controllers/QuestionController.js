@@ -130,39 +130,48 @@ exports.show = (req, res) => {
 
 // Search questions with parameter
 exports.search = (req, res) => {
-	const { minDifficulty, maxDifficulty } = req.body
-	let { questionDescription, tiers, topics, subtopics } = req.body
+	let {
+		minDifficulty,
+		maxDifficulty,
+		description,
+		tiers,
+		topics,
+		subtopics,
+	} = req.body
 
 	let queryObject = { isPublished: true }
 
 	// Filter input
-	if (minDifficulty < 1) {
+	if (minDifficulty === undefined || minDifficulty < 1) {
 		minDifficulty = 1
 	}
-	if (maxDifficulty > 5) {
+
+	if (maxDifficulty === undefined || maxDifficulty > 5) {
 		maxDifficulty = 5
 	}
 
 	queryObject.difficulty = { $gte: minDifficulty, $lte: maxDifficulty }
 
-	if (topics.length > 0) {
+	if (topics !== undefined && topics.length > 0) {
 		topics = topics.map((el) => el.name)
 		queryObject['topics.name'] = { $in: topics }
 	}
 
-	if (subtopics.length > 0) {
+	if (subtopics !== undefined && subtopics.length > 0) {
 		subtopics = subtopics.map((el) => el.name)
 		queryObject['subtopics.name'] = { $in: subtopics }
 	}
 
-	if (tiers.length > 0) {
+	if (tiers !== undefined && tiers.length > 0) {
 		tiers = tiers.map((el) => el.value)
 		queryObject.tiers = { $in: tiers }
 	}
 
 	// Process search on description to filter commmon words
-	if (questionDescription != '') {
-		queryObject.questionDescription = removeStopwords(questionDescription)
+	if (description !== undefined && description != '') {
+		queryObject.$text = {
+			$search: removeStopwords(description),
+		}
 	}
 
 	Question.find(
@@ -177,13 +186,16 @@ exports.search = (req, res) => {
 			numTries: 1,
 			maxScore: 1,
 		},
-		(err, doc) => {
+		{},
+		(err, docs) => {
 			if (err) return res.status(500).json(err)
+
+			console.log(docs)
 
 			return res.json({
 				status: 'ok',
 				message: 'Questions fetched',
-				data: doc,
+				data: docs,
 			})
 		}
 	)
